@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Compass, Sliders, ShieldCheck, Headset } from "lucide-react";
+import { ArrowRight, Compass, Sliders, ShieldCheck, Headset, Palmtree } from "lucide-react";
 
 export default function DestinationsAndWhyUs() {
   const destinations = [
@@ -70,12 +70,12 @@ export default function DestinationsAndWhyUs() {
   ];
 
   return (
-    <section id="destinations" className="py-16 md:py-24 bg-[#F8FAF9]">
+    <section id="destinations" className="py-10 md:py-12 bg-[#F8FAF9]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
           {/* Left Column: Top Destinations Grid (7 cols) */}
-          <div className="lg:col-span-8">
-            <div className="flex items-end justify-between mb-8">
+          <div className="lg:col-span-7 flex flex-col justify-between">
+            <div className="flex items-end justify-between mb-5">
               <div>
                 <span className="text-xs font-bold text-slate-500 tracking-[0.2em] uppercase">
                   Top Destinations
@@ -94,12 +94,12 @@ export default function DestinationsAndWhyUs() {
               </Link>
             </div>
 
-            {/* Destination cards grid */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
+            {/* Destination cards 4x2 grid */}
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 flex-grow">
               {destinations.map((dest, idx) => (
                 <div
                   key={idx}
-                  className="group relative h-40 rounded-xl overflow-hidden shadow-xs hover:shadow-md transition-all duration-300 cursor-pointer flex flex-col justify-end p-3"
+                  className="group relative h-32 sm:h-36 rounded-xl overflow-hidden shadow-xs hover:shadow-md transition-all duration-300 cursor-pointer flex flex-col justify-end p-2.5"
                 >
                   <Image
                     src={dest.image}
@@ -107,10 +107,10 @@ export default function DestinationsAndWhyUs() {
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 to-transparent" />
 
                   <div className="relative z-10">
-                    <h3 className="text-sm font-bold text-white leading-tight">
+                    <h3 className="text-xs sm:text-sm font-bold text-white leading-tight">
                       {dest.name}
                     </h3>
                     <p className="text-[10px] text-slate-300 truncate mt-0.5">
@@ -122,34 +122,50 @@ export default function DestinationsAndWhyUs() {
             </div>
           </div>
 
-          {/* Right Column: Why Travel With EdgewayTours (4 cols) */}
-          <div id="why-us" className="lg:col-span-4 bg-white rounded-2xl p-6 sm:p-8 border border-slate-100 shadow-sm">
-            <span className="text-xs font-bold text-slate-500 tracking-[0.2em] uppercase">
-              Why Travel With EdgewayTours
-            </span>
-            <h3 className="text-xl sm:text-2xl font-serif text-[#0A3B32] mt-2 mb-6">
-              The Edgeway Difference
-            </h3>
+          {/* Right Column: Why Travel With EdgewayTours (5 cols) */}
+          <div
+            id="why-us"
+            className="lg:col-span-5 bg-white rounded-2xl p-6 sm:p-7 border border-slate-100 shadow-xs relative overflow-hidden flex flex-col justify-between"
+          >
+            {/* Subtle Palm Silhouette Background */}
+            <div className="absolute -bottom-6 -right-6 text-slate-100/70 pointer-events-none">
+              <Palmtree className="w-44 h-44 opacity-20 text-[#0A3B32]" />
+            </div>
 
-            <div className="space-y-6">
-              {whyUsFeatures.map((feat, idx) => {
-                const Icon = feat.icon;
-                return (
-                  <div key={idx} className="flex items-start gap-4 group">
-                    <div className="w-11 h-11 rounded-xl bg-emerald-50 text-[#0A3B32] flex items-center justify-center shrink-0 group-hover:bg-[#0A3B32] group-hover:text-white transition-colors duration-200">
-                      <Icon className="w-5 h-5" />
+            <div>
+              <span className="text-[11px] font-bold text-slate-500 tracking-[0.2em] uppercase block">
+                Why Travel With EdgewayTours
+              </span>
+              <h3 className="text-xl sm:text-2xl font-serif text-[#0A3B32] mt-1 mb-6 font-normal">
+                The Edgeway Difference
+              </h3>
+
+              {/* 2x2 Clean Grid of Features */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 relative z-10">
+                {whyUsFeatures.map((feat, idx) => {
+                  const Icon = feat.icon;
+                  return (
+                    <div key={idx} className="flex items-start gap-3 group">
+                      <div className="w-10 h-10 rounded-xl bg-emerald-50 text-[#0A3B32] flex items-center justify-center shrink-0 group-hover:bg-[#0A3B32] group-hover:text-white transition-colors duration-200">
+                        <Icon className="w-5 h-5" />
+                      </div>
+                      <div>
+                        <h4 className="text-xs sm:text-sm font-bold text-slate-900 leading-tight">
+                          {feat.title}
+                        </h4>
+                        <p className="text-[11px] text-slate-500 mt-1 leading-relaxed">
+                          {feat.description}
+                        </p>
+                      </div>
                     </div>
-                    <div>
-                      <h4 className="text-sm font-bold text-slate-900 leading-tight">
-                        {feat.title}
-                      </h4>
-                      <p className="text-xs text-slate-500 mt-1 leading-relaxed">
-                        {feat.description}
-                      </p>
-                    </div>
-                  </div>
-                );
-              })}
+                  );
+                })}
+              </div>
+            </div>
+
+            <div className="pt-4 border-t border-slate-100 mt-6 flex items-center justify-between text-xs text-slate-400">
+              <span>Trusted by 1,000+ global travelers</span>
+              <span className="text-[#0A3B32] font-semibold">100% Sri Lankan Owned</span>
             </div>
           </div>
         </div>

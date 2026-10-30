@@ -28,22 +28,22 @@ export default function TravelBlog() {
   ];
 
   return (
-    <section id="blog" className="py-16 md:py-24 bg-[#F8FAF9]">
+    <section id="blog" className="py-10 md:py-12 bg-[#F8FAF9]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-10 gap-4">
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-6 gap-3">
           <div>
             <span className="text-xs font-bold text-slate-500 tracking-[0.2em] uppercase">
               Travel Inspiration
             </span>
-            <h2 className="text-3xl sm:text-4xl font-serif text-[#0A3B32] mt-2 font-normal">
+            <h2 className="text-2xl sm:text-3xl font-serif text-[#0A3B32] mt-1 font-normal">
               Latest from Our Travel Blog
             </h2>
           </div>
 
           <Link
             href="#all-articles"
-            className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#0A3B32] hover:text-[#10B981] transition-colors group"
+            className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-[#0A3B32] hover:text-[#10B981] transition-colors group"
           >
             <span>View All Articles</span>
             <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
@@ -51,14 +51,14 @@ export default function TravelBlog() {
         </div>
 
         {/* 3 Articles Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           {articles.map((post) => (
             <article
               key={post.id}
-              className="group bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
+              className="group bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-xs hover:shadow-lg transition-all duration-300 flex flex-col justify-between"
             >
               {/* Image with subtle floating circle */}
-              <div className="relative h-56 w-full overflow-hidden">
+              <div className="relative h-48 w-full overflow-hidden">
                 <Image
                   src={post.image}
                   alt={post.title}
@@ -66,20 +66,20 @@ export default function TravelBlog() {
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
 
-                <div className="absolute top-3 right-3 w-8 h-8 rounded-full bg-white/25 backdrop-blur-md border border-white/40 flex items-center justify-center text-white group-hover:bg-white group-hover:text-[#0A3B32] transition-colors">
-                  <ArrowUpRight className="w-4 h-4" />
+                <div className="absolute top-2.5 right-2.5 w-7 h-7 rounded-full bg-white/25 backdrop-blur-md border border-white/40 flex items-center justify-center text-white group-hover:bg-white group-hover:text-[#0A3B32] transition-colors">
+                  <ArrowUpRight className="w-3.5 h-3.5" />
                 </div>
               </div>
 
               {/* Text content */}
-              <div className="p-6 flex flex-col flex-grow justify-between">
+              <div className="p-5 flex flex-col flex-grow justify-between">
                 <div>
-                  <div className="flex items-center gap-1.5 text-xs font-medium text-slate-400 mb-2">
+                  <div className="flex items-center gap-1.5 text-[11px] font-medium text-slate-400 mb-1.5">
                     <Calendar className="w-3.5 h-3.5" />
                     <span>{post.date}</span>
                   </div>
 
-                  <h3 className="font-bold text-slate-900 text-lg group-hover:text-[#0A3B32] transition-colors leading-snug">
+                  <h3 className="font-bold text-slate-900 text-base group-hover:text-[#0A3B32] transition-colors leading-snug">
                     {post.title}
                   </h3>
 
@@ -88,13 +88,13 @@ export default function TravelBlog() {
                   </p>
                 </div>
 
-                <div className="mt-6 pt-4 border-t border-slate-50">
+                <div className="mt-4 pt-3 border-t border-slate-50">
                   <Link
                     href={`#post-${post.id}`}
                     className="inline-flex items-center gap-1 text-xs font-bold text-[#0A3B32] group-hover:text-[#10B981] transition-colors"
                   >
                     <span>Read Article</span>
-                    <ArrowRight className="w-3.5 h-3.5" />
+                    <ArrowRight className="w-3 h-3" />
                   </Link>
                 </div>
               </div>

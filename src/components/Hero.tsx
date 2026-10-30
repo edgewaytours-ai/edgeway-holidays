@@ -23,7 +23,7 @@ export default function Hero() {
   return (
     <section className="relative w-full bg-[#031713] overflow-visible">
       {/* 100% Full Width Hero Background */}
-      <div className="relative w-full min-h-[620px] lg:min-h-[700px] flex flex-col justify-between pt-10 sm:pt-14 pb-28 lg:pb-36">
+      <div className="relative w-full min-h-[560px] lg:min-h-[620px] flex flex-col justify-between pt-8 sm:pt-10 pb-20 lg:pb-24">
         {/* Cinematic Backdrop Image */}
         <div className="absolute inset-0 z-0">
           <Image
@@ -34,7 +34,7 @@ export default function Hero() {
             className="object-cover object-center"
           />
           {/* Natural Vignette & Gradients */}
-          <div className="absolute inset-0 bg-gradient-to-r from-[#031512]/95 via-[#05201A]/65 to-black/25" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#031512]/95 via-[#05201A]/60 to-black/25" />
           <div className="absolute inset-0 bg-gradient-to-t from-[#031713] via-transparent to-black/20" />
         </div>
 
@@ -55,7 +55,7 @@ export default function Hero() {
           </div>
 
           {/* Main Title & Action Row */}
-          <div className="max-w-2xl my-auto py-8 lg:py-10">
+          <div className="max-w-2xl my-auto py-6 lg:py-8">
             <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl text-white font-normal leading-[1.1] tracking-tight">
               More Than a Trip
               <br />
@@ -65,15 +65,15 @@ export default function Hero() {
               </span>
             </h1>
 
-            <p className="mt-5 text-sm sm:text-base text-slate-200/90 leading-relaxed font-light max-w-xl">
+            <p className="mt-4 text-sm sm:text-base text-slate-200/90 leading-relaxed font-light max-w-xl">
               Wild safaris, ancient kingdoms, tropical beaches and authentic local experiences — explore Sri Lanka with people who know and love this island.
             </p>
 
             {/* Buttons Row */}
-            <div className="mt-8 flex flex-wrap items-center gap-4">
+            <div className="mt-7 flex flex-wrap items-center gap-4">
               <Link
                 href="#popular-tours"
-                className="inline-flex items-center gap-2 bg-[#0A4D3E] hover:bg-[#073A2F] text-white text-sm font-semibold px-6 py-3.5 rounded-full shadow-md transition-all transform hover:-translate-y-0.5"
+                className="inline-flex items-center gap-2 bg-[#0A4D3E] hover:bg-[#073A2F] text-white text-sm font-semibold px-6 py-3 rounded-full shadow-md transition-all transform hover:-translate-y-0.5"
               >
                 <span>Explore Our Tours</span>
                 <ArrowRight className="w-4 h-4" />
@@ -81,7 +81,7 @@ export default function Hero() {
 
               <button
                 type="button"
-                className="inline-flex items-center gap-2.5 bg-black/35 hover:bg-black/50 text-white backdrop-blur-md border border-white/20 text-xs sm:text-sm font-medium px-5 py-3 rounded-full transition-all"
+                className="inline-flex items-center gap-2.5 bg-black/35 hover:bg-black/50 text-white backdrop-blur-md border border-white/20 text-xs sm:text-sm font-medium px-5 py-2.5 rounded-full transition-all"
               >
                 <span className="w-7 h-7 rounded-full bg-white text-[#0A3B32] flex items-center justify-center shadow-xs">
                   <Play className="w-3.5 h-3.5 fill-current ml-0.5" />
@@ -93,16 +93,16 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Bottom Row Inside Hero: Left Search Widget & Right Location Tag */}
-          <div className="relative w-full flex items-end justify-between -mb-32 lg:-mb-36 z-30">
-            {/* Search Box Sized Exactly Until The Sustainable Tourism Icon Position */}
+          {/* Bottom Row Inside Hero: Left Search Widget */}
+          <div className="relative w-full flex items-end justify-between -mb-28 lg:-mb-32 z-30">
+            {/* Search Box Sized to Reach Sustainable Tourism Icon */}
             <div className="w-full lg:max-w-[1080px] xl:max-w-[1100px]">
               {/* Folder-Style Attached Tabs */}
               <div className="flex items-end gap-1.5 pl-1">
                 <button
                   type="button"
                   onClick={() => setActiveTab("tours")}
-                  className={`flex items-center gap-2 px-6 py-3.5 rounded-t-xl text-xs sm:text-sm font-bold transition-all ${
+                  className={`flex items-center gap-2 px-6 py-3 rounded-t-xl text-xs sm:text-sm font-bold transition-all ${
                     activeTab === "tours"
                       ? "bg-[#063D34] text-white shadow-xs"
                       : "bg-[#E6ECE9] text-slate-700 hover:bg-[#d8e2de]"
@@ -115,7 +115,7 @@ export default function Hero() {
                 <button
                   type="button"
                   onClick={() => setActiveTab("packages")}
-                  className={`flex items-center gap-2 px-6 py-3.5 rounded-t-xl text-xs sm:text-sm font-semibold transition-all ${
+                  className={`flex items-center gap-2 px-6 py-3 rounded-t-xl text-xs sm:text-sm font-semibold transition-all ${
                     activeTab === "packages"
                       ? "bg-[#063D34] text-white shadow-xs"
                       : "bg-[#E6ECE9] text-slate-700 hover:bg-[#d8e2de]"
@@ -128,7 +128,7 @@ export default function Hero() {
                 <button
                   type="button"
                   onClick={() => setActiveTab("transfers")}
-                  className={`flex items-center gap-2 px-6 py-3.5 rounded-t-xl text-xs sm:text-sm font-semibold transition-all ${
+                  className={`flex items-center gap-2 px-6 py-3 rounded-t-xl text-xs sm:text-sm font-semibold transition-all ${
                     activeTab === "transfers"
                       ? "bg-[#063D34] text-white shadow-xs"
                       : "bg-[#E6ECE9] text-slate-700 hover:bg-[#d8e2de]"
@@ -141,7 +141,7 @@ export default function Hero() {
                 <button
                   type="button"
                   onClick={() => setActiveTab("custom")}
-                  className={`flex items-center gap-2 px-6 py-3.5 rounded-t-xl text-xs sm:text-sm font-semibold transition-all ${
+                  className={`flex items-center gap-2 px-6 py-3 rounded-t-xl text-xs sm:text-sm font-semibold transition-all ${
                     activeTab === "custom"
                       ? "bg-[#063D34] text-white shadow-xs"
                       : "bg-[#E6ECE9] text-slate-700 hover:bg-[#d8e2de]"
@@ -153,19 +153,19 @@ export default function Hero() {
               </div>
 
               {/* Main White Search Bar */}
-              <div className="bg-white rounded-b-2xl rounded-tr-2xl shadow-[0_16px_36px_rgba(0,0,0,0.14)] border border-slate-100 p-3 sm:p-4">
+              <div className="bg-white rounded-b-2xl rounded-tr-2xl shadow-[0_12px_32px_rgba(0,0,0,0.12)] border border-slate-100 p-3 sm:p-3.5">
                 <form
                   onSubmit={(e) => {
                     e.preventDefault();
                     alert(`Searching tours for ${destination || "Sri Lanka"} (${travellers})`);
                   }}
-                  className="flex flex-col md:flex-row items-stretch md:items-center gap-3 md:gap-0"
+                  className="flex flex-col md:flex-row items-stretch md:items-center gap-2.5 md:gap-0"
                 >
                   {/* Field 1: Destination */}
-                  <div className="flex-[1.2] flex items-center gap-3.5 px-4 py-2.5 min-w-0">
-                    <Search className="w-5 h-5 text-slate-500 shrink-0" />
+                  <div className="flex-[1.2] flex items-center gap-3 px-3.5 py-2 min-w-0">
+                    <Search className="w-4 h-4 text-slate-500 shrink-0" />
                     <div className="flex flex-col min-w-0 w-full">
-                      <label className="text-xs font-bold text-slate-900 uppercase tracking-tight">
+                      <label className="text-[11px] font-bold text-slate-900 uppercase tracking-tight">
                         Destination
                       </label>
                       <input
@@ -173,19 +173,19 @@ export default function Hero() {
                         value={destination}
                         onChange={(e) => setDestination(e.target.value)}
                         placeholder="Where do you want to go?"
-                        className="bg-transparent text-sm text-slate-700 placeholder-slate-400 font-medium focus:outline-none truncate mt-0.5"
+                        className="bg-transparent text-xs sm:text-sm text-slate-700 placeholder-slate-400 font-medium focus:outline-none truncate mt-0.5"
                       />
                     </div>
                   </div>
 
                   {/* Vertical Divider */}
-                  <div className="hidden md:block w-px h-11 bg-slate-200 mx-2 shrink-0" />
+                  <div className="hidden md:block w-px h-9 bg-slate-200 mx-2 shrink-0" />
 
                   {/* Field 2: Date */}
-                  <div className="flex-1 flex items-center gap-3.5 px-4 py-2.5 min-w-0">
-                    <Calendar className="w-5 h-5 text-slate-500 shrink-0" />
+                  <div className="flex-1 flex items-center gap-3 px-3.5 py-2 min-w-0">
+                    <Calendar className="w-4 h-4 text-slate-500 shrink-0" />
                     <div className="flex flex-col min-w-0 w-full">
-                      <label className="text-xs font-bold text-slate-900 uppercase tracking-tight">
+                      <label className="text-[11px] font-bold text-slate-900 uppercase tracking-tight">
                         Date
                       </label>
                       <input
@@ -193,19 +193,19 @@ export default function Hero() {
                         value={date}
                         onChange={(e) => setDate(e.target.value)}
                         placeholder="Select dates"
-                        className="bg-transparent text-sm text-slate-700 placeholder-slate-400 font-medium focus:outline-none truncate mt-0.5"
+                        className="bg-transparent text-xs sm:text-sm text-slate-700 placeholder-slate-400 font-medium focus:outline-none truncate mt-0.5"
                       />
                     </div>
                   </div>
 
                   {/* Vertical Divider */}
-                  <div className="hidden md:block w-px h-11 bg-slate-200 mx-2 shrink-0" />
+                  <div className="hidden md:block w-px h-9 bg-slate-200 mx-2 shrink-0" />
 
                   {/* Field 3: Travellers */}
-                  <div className="flex-1 flex items-center gap-3.5 px-4 py-2.5 min-w-0">
-                    <User className="w-5 h-5 text-slate-700 shrink-0" />
+                  <div className="flex-1 flex items-center gap-3 px-3.5 py-2 min-w-0">
+                    <User className="w-4 h-4 text-slate-700 shrink-0" />
                     <div className="flex flex-col min-w-0 w-full">
-                      <label className="text-xs font-bold text-slate-900 uppercase tracking-tight">
+                      <label className="text-[11px] font-bold text-slate-900 uppercase tracking-tight">
                         Travellers
                       </label>
                       <input
@@ -213,7 +213,7 @@ export default function Hero() {
                         value={travellers}
                         onChange={(e) => setTravellers(e.target.value)}
                         placeholder="2 travellers"
-                        className="bg-transparent text-sm text-slate-700 placeholder-slate-400 font-medium focus:outline-none truncate mt-0.5"
+                        className="bg-transparent text-xs sm:text-sm text-slate-700 placeholder-slate-400 font-medium focus:outline-none truncate mt-0.5"
                       />
                     </div>
                   </div>
@@ -221,7 +221,7 @@ export default function Hero() {
                   {/* Action Button */}
                   <button
                     type="submit"
-                    className="bg-[#063D34] hover:bg-[#042A24] text-white font-bold text-sm sm:text-base px-8 py-4 rounded-xl flex items-center justify-center gap-2.5 shadow-md shadow-[#063D34]/25 transition-all shrink-0 md:ml-3"
+                    className="bg-[#063D34] hover:bg-[#042A24] text-white font-bold text-xs sm:text-sm px-7 py-3.5 rounded-xl flex items-center justify-center gap-2 shadow-sm transition-all shrink-0 md:ml-2.5"
                   >
                     <span>Search Tours</span>
                     <ArrowRight className="w-4 h-4" />
