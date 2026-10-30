@@ -25,7 +25,7 @@ export default function PopularTours() {
     {
       id: "yala",
       title: "Yala Wildlife Safari",
-      image: "https://images.unsplash.com/photo-1561731216-c3a4d99437d5?q=80&w=800&auto=format&fit=crop",
+      image: "/images/tour-yala.jpg",
       rating: "4.9",
       reviewsCount: "120+",
       duration: "Half-day / Full-day",
@@ -36,7 +36,7 @@ export default function PopularTours() {
     {
       id: "sigiriya",
       title: "Sigiriya & Dambulla Tour",
-      image: "https://images.unsplash.com/photo-1620619767280-73249d9629b5?q=80&w=800&auto=format&fit=crop",
+      image: "/images/tour-sigiriya.jpg",
       rating: "4.8",
       reviewsCount: "100+",
       duration: "Full day tour",
@@ -47,7 +47,7 @@ export default function PopularTours() {
     {
       id: "arugam",
       title: "Surf Lessons in Arugam Bay",
-      image: "https://images.unsplash.com/photo-1502680390469-be75c86b636f?q=80&w=800&auto=format&fit=crop",
+      image: "/images/tour-arugam.jpg",
       rating: "4.9",
       reviewsCount: "150+",
       duration: "2 hours",
@@ -58,7 +58,7 @@ export default function PopularTours() {
     {
       id: "ella",
       title: "Ella Scenic Day Tour",
-      image: "https://images.unsplash.com/photo-1546708973-b339540b5162?q=80&w=800&auto=format&fit=crop",
+      image: "/images/tour-ella.jpg",
       rating: "4.8",
       reviewsCount: "110+",
       duration: "Full day tour",

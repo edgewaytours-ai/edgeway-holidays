@@ -7,37 +7,37 @@ export default function ExperienceSection() {
     {
       title: "Wildlife & Safaris",
       description: "National parks & amazing wildlife",
-      image: "https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?q=80&w=800&auto=format&fit=crop",
+      image: "/images/exp-wildlife.jpg",
       icon: Trees,
     },
     {
       title: "Culture & Heritage",
       description: "Ancient cities, temples & history",
-      image: "https://images.unsplash.com/photo-1578575437130-527eed3abbec?q=80&w=800&auto=format&fit=crop",
+      image: "/images/exp-culture.jpg",
       icon: Landmark,
     },
     {
       title: "Beach & Surf",
       description: "Surf lessons, beach trips & coastal experiences",
-      image: "https://images.unsplash.com/photo-1502680390469-be75c86b636f?q=80&w=800&auto=format&fit=crop",
+      image: "/images/exp-beach.jpg",
       icon: Waves,
     },
     {
       title: "Adventure & Nature",
       description: "Hiking, trekking & outdoor activities",
-      image: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=800&auto=format&fit=crop",
+      image: "/images/exp-adventure.jpg",
       icon: Mountain,
     },
     {
       title: "Local Experiences",
       description: "Village visits, food & authentic culture",
-      image: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=800&auto=format&fit=crop",
+      image: "/images/exp-local.jpg",
       icon: Utensils,
     },
     {
       title: "Multi-Day Tours",
       description: "Complete Sri Lanka holiday packages",
-      image: "https://images.unsplash.com/photo-1546708973-b339540b5162?q=80&w=800&auto=format&fit=crop",
+      image: "/images/exp-multiday.jpg",
       icon: TrainTrack,
     },
   ];
