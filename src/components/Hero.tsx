@@ -11,7 +11,6 @@ import {
   Search,
   Calendar,
   Play,
-  MapPin,
   ArrowRight,
 } from "lucide-react";
 
@@ -28,7 +27,7 @@ export default function Hero() {
         {/* Cinematic Backdrop Image */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://images.unsplash.com/photo-1586861635167-e5223aadc9fe?q=80&w=2400&auto=format&fit=crop"
+            src="/images/hero-sigiriya.jpg"
             alt="Sigiriya Rock Fortress panoramic view, Sri Lanka"
             fill
             priority
@@ -229,12 +228,6 @@ export default function Hero() {
                   </button>
                 </form>
               </div>
-            </div>
-
-            {/* Right Location Pin Badge (Sitting on the rock cliff) */}
-            <div className="hidden md:flex items-center gap-1.5 text-xs text-white/85 mb-6 shrink-0 pl-4">
-              <MapPin className="w-3.5 h-3.5 text-amber-400" />
-              <span>Sigiriya, Sri Lanka</span>
             </div>
           </div>
         </div>
