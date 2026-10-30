@@ -48,17 +48,17 @@ export default function ExperienceSection() {
         {/* Section Header */}
         <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-6 gap-3">
           <div>
-            <span className="text-xs font-bold text-slate-500 tracking-[0.2em] uppercase">
+            <span className="text-[11px] font-bold text-slate-500 tracking-[0.2em] uppercase">
               Explore by Experience
             </span>
-            <h2 className="text-2xl sm:text-3xl font-serif text-[#0A3B32] mt-1 font-normal">
+            <h2 className="text-2xl sm:text-3xl font-serif text-[#063D34] mt-1 font-normal">
               Discover Sri Lanka Your Way
             </h2>
           </div>
 
           <Link
             href="#all-experiences"
-            className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-[#0A3B32] hover:text-[#10B981] transition-colors group"
+            className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-[#063D34] hover:text-[#10B981] transition-colors group"
           >
             <span>View All Experiences</span>
             <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
@@ -72,7 +72,7 @@ export default function ExperienceSection() {
             return (
               <div
                 key={idx}
-                className="group relative h-64 sm:h-72 rounded-2xl overflow-hidden shadow-xs hover:shadow-lg transition-all duration-300 cursor-pointer flex flex-col justify-end p-4"
+                className="group relative h-60 sm:h-64 rounded-2xl overflow-hidden shadow-xs hover:shadow-lg transition-all duration-300 cursor-pointer flex flex-col justify-end p-4"
               >
                 {/* Background Image */}
                 <Image
@@ -87,13 +87,13 @@ export default function ExperienceSection() {
 
                 {/* Card Content */}
                 <div className="relative z-10">
-                  <div className="w-8 h-8 rounded-full bg-white/20 backdrop-blur-md border border-white/30 flex items-center justify-center text-white mb-2.5 group-hover:bg-[#10B981] transition-colors">
+                  <div className="w-7 h-7 rounded-full bg-white/20 backdrop-blur-md border border-white/30 flex items-center justify-center text-white mb-2 group-hover:bg-[#10B981] transition-colors">
                     <Icon className="w-3.5 h-3.5" />
                   </div>
                   <h3 className="text-sm sm:text-base font-bold text-white group-hover:text-emerald-300 transition-colors leading-snug">
                     {exp.title}
                   </h3>
-                  <p className="text-[11px] text-slate-200 mt-1 line-clamp-2 font-light">
+                  <p className="text-[11px] text-slate-200 mt-0.5 line-clamp-2 font-light">
                     {exp.description}
                   </p>
                 </div>
