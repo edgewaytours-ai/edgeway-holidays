@@ -35,21 +35,21 @@ export default function TrustBar() {
   ];
 
   return (
-    <section className="pt-20 sm:pt-24 pb-8 border-b border-slate-100 bg-white">
+    <section className="pt-24 sm:pt-28 pb-10 border-b border-slate-100 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 items-center">
           {trustItems.map((item, idx) => {
             const Icon = item.icon;
             return (
-              <div key={idx} className="flex items-center gap-3 group">
-                <div className="w-10 h-10 rounded-xl bg-emerald-50 text-[#0A3B32] flex items-center justify-center shrink-0 group-hover:bg-[#0A3B32] group-hover:text-white transition-colors duration-200">
+              <div key={idx} className="flex items-center gap-3.5 group">
+                <div className="w-11 h-11 rounded-xl bg-emerald-50 text-[#0A3B32] flex items-center justify-center shrink-0 group-hover:bg-[#0A3B32] group-hover:text-white transition-colors duration-200">
                   <Icon className="w-5 h-5" />
                 </div>
                 <div className="flex flex-col">
                   <span className="text-sm font-bold text-slate-800 leading-tight">
                     {item.title}
                   </span>
-                  <span className="text-xs text-slate-500 font-medium">
+                  <span className="text-xs text-slate-500 font-medium mt-0.5">
                     {item.subtitle}
                   </span>
                 </div>

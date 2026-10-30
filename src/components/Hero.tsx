@@ -24,7 +24,7 @@ export default function Hero() {
   return (
     <section className="relative w-full bg-[#031713] overflow-visible">
       {/* 100% Full Width Hero Background */}
-      <div className="relative w-full min-h-[580px] lg:min-h-[660px] flex flex-col justify-between pt-10 sm:pt-14 pb-20 lg:pb-24">
+      <div className="relative w-full min-h-[620px] lg:min-h-[700px] flex flex-col justify-between pt-10 sm:pt-14 pb-28 lg:pb-36">
         {/* Cinematic Backdrop Image */}
         <div className="absolute inset-0 z-0">
           <Image
@@ -74,7 +74,7 @@ export default function Hero() {
             <div className="mt-8 flex flex-wrap items-center gap-4">
               <Link
                 href="#popular-tours"
-                className="inline-flex items-center gap-2 bg-[#0A4D3E] hover:bg-[#073A2F] text-white text-sm font-semibold px-6 py-3 rounded-full shadow-md transition-all transform hover:-translate-y-0.5"
+                className="inline-flex items-center gap-2 bg-[#0A4D3E] hover:bg-[#073A2F] text-white text-sm font-semibold px-6 py-3.5 rounded-full shadow-md transition-all transform hover:-translate-y-0.5"
               >
                 <span>Explore Our Tours</span>
                 <ArrowRight className="w-4 h-4" />
@@ -82,7 +82,7 @@ export default function Hero() {
 
               <button
                 type="button"
-                className="inline-flex items-center gap-2.5 bg-black/35 hover:bg-black/50 text-white backdrop-blur-md border border-white/20 text-xs sm:text-sm font-medium px-4 py-2.5 rounded-full transition-all"
+                className="inline-flex items-center gap-2.5 bg-black/35 hover:bg-black/50 text-white backdrop-blur-md border border-white/20 text-xs sm:text-sm font-medium px-5 py-3 rounded-full transition-all"
               >
                 <span className="w-7 h-7 rounded-full bg-white text-[#0A3B32] flex items-center justify-center shadow-xs">
                   <Play className="w-3.5 h-3.5 fill-current ml-0.5" />
@@ -95,15 +95,15 @@ export default function Hero() {
           </div>
 
           {/* Bottom Row Inside Hero: Left Search Widget & Right Location Tag */}
-          <div className="relative w-full flex items-end justify-between -mb-28 lg:-mb-32 z-30">
-            {/* The Left-Aligned Compact Search Box Matching Design Reference */}
-            <div className="w-full max-w-[820px]">
-              {/* Folder-Style Tabs Attached to the Box Top */}
-              <div className="flex items-end gap-1 pl-1">
+          <div className="relative w-full flex items-end justify-between -mb-32 lg:-mb-36 z-30">
+            {/* Left-Aligned, Generously Sized Responsive Search Box */}
+            <div className="w-full max-w-3xl lg:max-w-[940px] xl:max-w-[980px]">
+              {/* Folder-Style Attached Tabs */}
+              <div className="flex items-end gap-1.5 pl-1">
                 <button
                   type="button"
                   onClick={() => setActiveTab("tours")}
-                  className={`flex items-center gap-2 px-5 py-2.5 rounded-t-xl text-xs sm:text-sm font-bold transition-all ${
+                  className={`flex items-center gap-2.5 px-6 py-3.5 rounded-t-xl text-xs sm:text-sm font-bold transition-all ${
                     activeTab === "tours"
                       ? "bg-[#063D34] text-white shadow-xs"
                       : "bg-[#E6ECE9] text-slate-700 hover:bg-[#d8e2de]"
@@ -116,7 +116,7 @@ export default function Hero() {
                 <button
                   type="button"
                   onClick={() => setActiveTab("packages")}
-                  className={`flex items-center gap-2 px-5 py-2.5 rounded-t-xl text-xs sm:text-sm font-medium transition-all ${
+                  className={`flex items-center gap-2.5 px-6 py-3.5 rounded-t-xl text-xs sm:text-sm font-semibold transition-all ${
                     activeTab === "packages"
                       ? "bg-[#063D34] text-white shadow-xs"
                       : "bg-[#E6ECE9] text-slate-700 hover:bg-[#d8e2de]"
@@ -129,7 +129,7 @@ export default function Hero() {
                 <button
                   type="button"
                   onClick={() => setActiveTab("transfers")}
-                  className={`flex items-center gap-2 px-5 py-2.5 rounded-t-xl text-xs sm:text-sm font-medium transition-all ${
+                  className={`flex items-center gap-2.5 px-6 py-3.5 rounded-t-xl text-xs sm:text-sm font-semibold transition-all ${
                     activeTab === "transfers"
                       ? "bg-[#063D34] text-white shadow-xs"
                       : "bg-[#E6ECE9] text-slate-700 hover:bg-[#d8e2de]"
@@ -142,7 +142,7 @@ export default function Hero() {
                 <button
                   type="button"
                   onClick={() => setActiveTab("custom")}
-                  className={`flex items-center gap-2 px-5 py-2.5 rounded-t-xl text-xs sm:text-sm font-medium transition-all ${
+                  className={`flex items-center gap-2.5 px-6 py-3.5 rounded-t-xl text-xs sm:text-sm font-semibold transition-all ${
                     activeTab === "custom"
                       ? "bg-[#063D34] text-white shadow-xs"
                       : "bg-[#E6ECE9] text-slate-700 hover:bg-[#d8e2de]"
@@ -153,20 +153,20 @@ export default function Hero() {
                 </button>
               </div>
 
-              {/* Main White Search Bar */}
-              <div className="bg-white rounded-b-2xl rounded-tr-2xl shadow-[0_12px_32px_rgba(0,0,0,0.12)] border border-slate-100 p-2 sm:p-2.5">
+              {/* Main White Search Bar with Comfortable Heights & Spacing */}
+              <div className="bg-white rounded-b-2xl rounded-tr-2xl shadow-[0_16px_36px_rgba(0,0,0,0.14)] border border-slate-100 p-3 sm:p-4">
                 <form
                   onSubmit={(e) => {
                     e.preventDefault();
                     alert(`Searching tours for ${destination || "Sri Lanka"} (${travellers})`);
                   }}
-                  className="flex flex-col md:flex-row items-stretch md:items-center gap-2 md:gap-0"
+                  className="flex flex-col md:flex-row items-stretch md:items-center gap-3 md:gap-0"
                 >
                   {/* Field 1: Destination */}
-                  <div className="flex-1 flex items-center gap-3 px-3 py-2 min-w-0">
-                    <Search className="w-4 h-4 text-slate-400 shrink-0" />
-                    <div className="flex flex-col min-w-0">
-                      <label className="text-[10px] font-extrabold text-slate-800 uppercase tracking-tight">
+                  <div className="flex-1 flex items-center gap-3.5 px-4 py-2.5 min-w-0">
+                    <Search className="w-5 h-5 text-slate-500 shrink-0" />
+                    <div className="flex flex-col min-w-0 w-full">
+                      <label className="text-xs font-bold text-slate-900 uppercase tracking-tight">
                         Destination
                       </label>
                       <input
@@ -174,19 +174,19 @@ export default function Hero() {
                         value={destination}
                         onChange={(e) => setDestination(e.target.value)}
                         placeholder="Where do you want to go?"
-                        className="bg-transparent text-xs text-slate-700 placeholder-slate-400 font-medium focus:outline-none truncate"
+                        className="bg-transparent text-sm text-slate-700 placeholder-slate-400 font-medium focus:outline-none truncate mt-0.5"
                       />
                     </div>
                   </div>
 
                   {/* Vertical Divider */}
-                  <div className="hidden md:block w-px h-8 bg-slate-200 mx-2 shrink-0" />
+                  <div className="hidden md:block w-px h-11 bg-slate-200 mx-2 shrink-0" />
 
                   {/* Field 2: Date */}
-                  <div className="flex-1 flex items-center gap-3 px-3 py-2 min-w-0">
-                    <Calendar className="w-4 h-4 text-slate-400 shrink-0" />
-                    <div className="flex flex-col min-w-0">
-                      <label className="text-[10px] font-extrabold text-slate-800 uppercase tracking-tight">
+                  <div className="flex-1 flex items-center gap-3.5 px-4 py-2.5 min-w-0">
+                    <Calendar className="w-5 h-5 text-slate-500 shrink-0" />
+                    <div className="flex flex-col min-w-0 w-full">
+                      <label className="text-xs font-bold text-slate-900 uppercase tracking-tight">
                         Date
                       </label>
                       <input
@@ -194,19 +194,19 @@ export default function Hero() {
                         value={date}
                         onChange={(e) => setDate(e.target.value)}
                         placeholder="Select dates"
-                        className="bg-transparent text-xs text-slate-700 placeholder-slate-400 font-medium focus:outline-none truncate"
+                        className="bg-transparent text-sm text-slate-700 placeholder-slate-400 font-medium focus:outline-none truncate mt-0.5"
                       />
                     </div>
                   </div>
 
                   {/* Vertical Divider */}
-                  <div className="hidden md:block w-px h-8 bg-slate-200 mx-2 shrink-0" />
+                  <div className="hidden md:block w-px h-11 bg-slate-200 mx-2 shrink-0" />
 
                   {/* Field 3: Travellers */}
-                  <div className="flex-1 flex items-center gap-3 px-3 py-2 min-w-0">
-                    <User className="w-4 h-4 text-slate-700 shrink-0" />
-                    <div className="flex flex-col min-w-0">
-                      <label className="text-[10px] font-extrabold text-slate-800 uppercase tracking-tight">
+                  <div className="flex-1 flex items-center gap-3.5 px-4 py-2.5 min-w-0">
+                    <User className="w-5 h-5 text-slate-700 shrink-0" />
+                    <div className="flex flex-col min-w-0 w-full">
+                      <label className="text-xs font-bold text-slate-900 uppercase tracking-tight">
                         Travellers
                       </label>
                       <input
@@ -214,7 +214,7 @@ export default function Hero() {
                         value={travellers}
                         onChange={(e) => setTravellers(e.target.value)}
                         placeholder="2 travellers"
-                        className="bg-transparent text-xs text-slate-700 placeholder-slate-400 font-medium focus:outline-none truncate"
+                        className="bg-transparent text-sm text-slate-700 placeholder-slate-400 font-medium focus:outline-none truncate mt-0.5"
                       />
                     </div>
                   </div>
@@ -222,17 +222,17 @@ export default function Hero() {
                   {/* Action Button */}
                   <button
                     type="submit"
-                    className="bg-[#063D34] hover:bg-[#042A24] text-white font-semibold text-xs sm:text-sm px-6 py-3 rounded-xl flex items-center justify-center gap-2 shadow-xs transition-all shrink-0 md:ml-2"
+                    className="bg-[#063D34] hover:bg-[#042A24] text-white font-bold text-sm sm:text-base px-8 py-4 rounded-xl flex items-center justify-center gap-2.5 shadow-md shadow-[#063D34]/25 transition-all shrink-0 md:ml-3"
                   >
                     <span>Search Tours</span>
-                    <ArrowRight className="w-3.5 h-3.5" />
+                    <ArrowRight className="w-4 h-4" />
                   </button>
                 </form>
               </div>
             </div>
 
             {/* Right Location Pin Badge (Sitting on the rock cliff) */}
-            <div className="hidden md:flex items-center gap-1.5 text-xs text-white/85 mb-4 shrink-0">
+            <div className="hidden md:flex items-center gap-1.5 text-xs text-white/85 mb-6 shrink-0">
               <MapPin className="w-3.5 h-3.5 text-amber-400" />
               <span>Sigiriya, Sri Lanka</span>
             </div>
