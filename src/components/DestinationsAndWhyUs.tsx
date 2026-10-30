@@ -1,0 +1,159 @@
+import Image from "next/image";
+import Link from "next/link";
+import { ArrowRight, Compass, Sliders, ShieldCheck, Headset } from "lucide-react";
+
+export default function DestinationsAndWhyUs() {
+  const destinations = [
+    {
+      name: "Arugam Bay",
+      tag: "Surf & Beach",
+      image: "https://images.unsplash.com/photo-1502680390469-be75c86b636f?q=80&w=600&auto=format&fit=crop",
+    },
+    {
+      name: "Ella",
+      tag: "Mountains & Nature",
+      image: "https://images.unsplash.com/photo-1546708973-b339540b5162?q=80&w=600&auto=format&fit=crop",
+    },
+    {
+      name: "Sigiriya",
+      tag: "Ancient Rock Fortress",
+      image: "https://images.unsplash.com/photo-1586861635167-e5223aadc9fe?q=80&w=600&auto=format&fit=crop",
+    },
+    {
+      name: "Kandy",
+      tag: "Ancient Rock Fortress",
+      image: "https://images.unsplash.com/photo-1578575437130-527eed3abbec?q=80&w=600&auto=format&fit=crop",
+    },
+    {
+      name: "Kandy",
+      tag: "Culture & Temples",
+      image: "https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?q=80&w=600&auto=format&fit=crop",
+    },
+    {
+      name: "Mirissa",
+      tag: "Whale Watching",
+      image: "https://images.unsplash.com/photo-1518837695005-2083093ee35b?q=80&w=600&auto=format&fit=crop",
+    },
+    {
+      name: "Yala",
+      tag: "Wildlife & Safari",
+      image: "https://images.unsplash.com/photo-1561731216-c3a4d99437d5?q=80&w=600&auto=format&fit=crop",
+    },
+    {
+      name: "Trincomalee",
+      tag: "Beaches & Diving",
+      image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=600&auto=format&fit=crop",
+    },
+  ];
+
+  const whyUsFeatures = [
+    {
+      icon: Compass,
+      title: "Local Expertise",
+      description: "Born in Sri Lanka, sharing authentic experiences",
+    },
+    {
+      icon: Sliders,
+      title: "Personalized Trips",
+      description: "Custom itineraries to match your style",
+    },
+    {
+      icon: ShieldCheck,
+      title: "Transparent Pricing",
+      description: "No hidden costs, clear inclusions",
+    },
+    {
+      icon: Headset,
+      title: "Support 24/7",
+      description: "We're here before, during and after your trip",
+    },
+  ];
+
+  return (
+    <section id="destinations" className="py-16 md:py-24 bg-[#F8FAF9]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+          {/* Left Column: Top Destinations Grid (7 cols) */}
+          <div className="lg:col-span-8">
+            <div className="flex items-end justify-between mb-8">
+              <div>
+                <span className="text-xs font-bold text-slate-500 tracking-[0.2em] uppercase">
+                  Top Destinations
+                </span>
+                <h2 className="text-2xl sm:text-3xl font-serif text-[#0A3B32] mt-1 font-normal">
+                  Explore Famous Places in Sri Lanka
+                </h2>
+              </div>
+
+              <Link
+                href="#all-destinations"
+                className="hidden sm:inline-flex items-center gap-1.5 text-xs font-semibold text-[#0A3B32] hover:text-[#10B981] transition-colors"
+              >
+                <span>View All Destinations</span>
+                <ArrowRight className="w-3.5 h-3.5" />
+              </Link>
+            </div>
+
+            {/* Destination cards grid */}
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
+              {destinations.map((dest, idx) => (
+                <div
+                  key={idx}
+                  className="group relative h-40 rounded-xl overflow-hidden shadow-xs hover:shadow-md transition-all duration-300 cursor-pointer flex flex-col justify-end p-3"
+                >
+                  <Image
+                    src={dest.image}
+                    alt={dest.name}
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent" />
+
+                  <div className="relative z-10">
+                    <h3 className="text-sm font-bold text-white leading-tight">
+                      {dest.name}
+                    </h3>
+                    <p className="text-[10px] text-slate-300 truncate mt-0.5">
+                      {dest.tag}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Right Column: Why Travel With EdgewayTours (4 cols) */}
+          <div id="why-us" className="lg:col-span-4 bg-white rounded-2xl p-6 sm:p-8 border border-slate-100 shadow-sm">
+            <span className="text-xs font-bold text-slate-500 tracking-[0.2em] uppercase">
+              Why Travel With EdgewayTours
+            </span>
+            <h3 className="text-xl sm:text-2xl font-serif text-[#0A3B32] mt-2 mb-6">
+              The Edgeway Difference
+            </h3>
+
+            <div className="space-y-6">
+              {whyUsFeatures.map((feat, idx) => {
+                const Icon = feat.icon;
+                return (
+                  <div key={idx} className="flex items-start gap-4 group">
+                    <div className="w-11 h-11 rounded-xl bg-emerald-50 text-[#0A3B32] flex items-center justify-center shrink-0 group-hover:bg-[#0A3B32] group-hover:text-white transition-colors duration-200">
+                      <Icon className="w-5 h-5" />
+                    </div>
+                    <div>
+                      <h4 className="text-sm font-bold text-slate-900 leading-tight">
+                        {feat.title}
+                      </h4>
+                      <p className="text-xs text-slate-500 mt-1 leading-relaxed">
+                        {feat.description}
+                      </p>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
