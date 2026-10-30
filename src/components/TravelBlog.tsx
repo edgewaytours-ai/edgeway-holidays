@@ -29,7 +29,7 @@ export default function TravelBlog() {
 
   return (
     <section id="blog" className="py-16 md:py-24 bg-[#F8FAF9]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full max-w-[1440px] mx-auto px-6 lg:px-12 xl:px-16">
         {/* Section Header */}
         <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-10 gap-4">
           <div>
