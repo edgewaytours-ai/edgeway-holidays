@@ -1,14 +1,29 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Search, ChevronDown, Menu, X, ArrowRight } from "lucide-react";
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 10);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <header className="sticky top-0 z-50 bg-white border-b border-slate-100 shadow-xs">
+    <header
+      className={`sticky top-0 z-50 w-full bg-white transition-shadow duration-200 ${
+        isScrolled
+          ? "shadow-md border-b border-slate-200/80"
+          : "border-b border-slate-100 shadow-xs"
+      }`}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Brand Logo with Palm & Wave Emblem */}
@@ -18,7 +33,6 @@ export default function Navbar() {
                 viewBox="0 0 24 24"
                 className="w-6 h-6 fill-none stroke-current stroke-[1.8] text-[#10B981]"
               >
-                {/* Palm tree and wave curve */}
                 <path d="M13 8c0-3-2-5-5-5 0 3 2 5 5 5z" />
                 <path d="M13 8c2-3 4-4 7-3-1 3-3 5-7 3z" />
                 <path d="M13 8c3 1 5 3 5 6-3 0-5-2-5-6z" />
@@ -94,7 +108,7 @@ export default function Navbar() {
 
             <Link
               href="#plan-trip"
-              className="inline-flex items-center gap-2 bg-[#0A3B32] hover:bg-[#072822] text-white text-sm font-semibold px-6 py-2.5 rounded-full shadow-sm hover:shadow-md transition-all duration-200"
+              className="inline-flex items-center gap-2 bg-[#063D34] hover:bg-[#042A24] text-white text-sm font-semibold px-6 py-2.5 rounded-full shadow-sm hover:shadow-md transition-all duration-200"
             >
               <span>Plan Your Trip</span>
               <ArrowRight className="w-4 h-4" />
@@ -166,7 +180,7 @@ export default function Navbar() {
             <Link
               href="#plan-trip"
               onClick={() => setMobileMenuOpen(false)}
-              className="w-full text-center bg-[#0A3B32] text-white font-semibold py-3 rounded-full shadow-sm"
+              className="w-full text-center bg-[#063D34] text-white font-semibold py-3 rounded-full shadow-sm"
             >
               Plan Your Trip
             </Link>

@@ -39,7 +39,7 @@ export default function Hero() {
           <div className="absolute inset-0 bg-gradient-to-t from-[#031713] via-transparent to-black/20" />
         </div>
 
-        {/* Content Container (Standard Crisp Width Aligned With Header) */}
+        {/* Content Container (Aligned With Header and TrustBar Grid) */}
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex-grow flex flex-col justify-between">
           {/* Top Row: Subtitle Tag & Right Callout */}
           <div className="flex items-start justify-between w-full">
@@ -96,14 +96,14 @@ export default function Hero() {
 
           {/* Bottom Row Inside Hero: Left Search Widget & Right Location Tag */}
           <div className="relative w-full flex items-end justify-between -mb-32 lg:-mb-36 z-30">
-            {/* Left-Aligned, Generously Sized Responsive Search Box */}
-            <div className="w-full max-w-3xl lg:max-w-[940px] xl:max-w-[980px]">
+            {/* Search Box Sized Exactly Until The Sustainable Tourism Icon Position */}
+            <div className="w-full lg:max-w-[1080px] xl:max-w-[1100px]">
               {/* Folder-Style Attached Tabs */}
               <div className="flex items-end gap-1.5 pl-1">
                 <button
                   type="button"
                   onClick={() => setActiveTab("tours")}
-                  className={`flex items-center gap-2.5 px-6 py-3.5 rounded-t-xl text-xs sm:text-sm font-bold transition-all ${
+                  className={`flex items-center gap-2 px-6 py-3.5 rounded-t-xl text-xs sm:text-sm font-bold transition-all ${
                     activeTab === "tours"
                       ? "bg-[#063D34] text-white shadow-xs"
                       : "bg-[#E6ECE9] text-slate-700 hover:bg-[#d8e2de]"
@@ -116,7 +116,7 @@ export default function Hero() {
                 <button
                   type="button"
                   onClick={() => setActiveTab("packages")}
-                  className={`flex items-center gap-2.5 px-6 py-3.5 rounded-t-xl text-xs sm:text-sm font-semibold transition-all ${
+                  className={`flex items-center gap-2 px-6 py-3.5 rounded-t-xl text-xs sm:text-sm font-semibold transition-all ${
                     activeTab === "packages"
                       ? "bg-[#063D34] text-white shadow-xs"
                       : "bg-[#E6ECE9] text-slate-700 hover:bg-[#d8e2de]"
@@ -129,7 +129,7 @@ export default function Hero() {
                 <button
                   type="button"
                   onClick={() => setActiveTab("transfers")}
-                  className={`flex items-center gap-2.5 px-6 py-3.5 rounded-t-xl text-xs sm:text-sm font-semibold transition-all ${
+                  className={`flex items-center gap-2 px-6 py-3.5 rounded-t-xl text-xs sm:text-sm font-semibold transition-all ${
                     activeTab === "transfers"
                       ? "bg-[#063D34] text-white shadow-xs"
                       : "bg-[#E6ECE9] text-slate-700 hover:bg-[#d8e2de]"
@@ -142,7 +142,7 @@ export default function Hero() {
                 <button
                   type="button"
                   onClick={() => setActiveTab("custom")}
-                  className={`flex items-center gap-2.5 px-6 py-3.5 rounded-t-xl text-xs sm:text-sm font-semibold transition-all ${
+                  className={`flex items-center gap-2 px-6 py-3.5 rounded-t-xl text-xs sm:text-sm font-semibold transition-all ${
                     activeTab === "custom"
                       ? "bg-[#063D34] text-white shadow-xs"
                       : "bg-[#E6ECE9] text-slate-700 hover:bg-[#d8e2de]"
@@ -153,7 +153,7 @@ export default function Hero() {
                 </button>
               </div>
 
-              {/* Main White Search Bar with Comfortable Heights & Spacing */}
+              {/* Main White Search Bar */}
               <div className="bg-white rounded-b-2xl rounded-tr-2xl shadow-[0_16px_36px_rgba(0,0,0,0.14)] border border-slate-100 p-3 sm:p-4">
                 <form
                   onSubmit={(e) => {
@@ -163,7 +163,7 @@ export default function Hero() {
                   className="flex flex-col md:flex-row items-stretch md:items-center gap-3 md:gap-0"
                 >
                   {/* Field 1: Destination */}
-                  <div className="flex-1 flex items-center gap-3.5 px-4 py-2.5 min-w-0">
+                  <div className="flex-[1.2] flex items-center gap-3.5 px-4 py-2.5 min-w-0">
                     <Search className="w-5 h-5 text-slate-500 shrink-0" />
                     <div className="flex flex-col min-w-0 w-full">
                       <label className="text-xs font-bold text-slate-900 uppercase tracking-tight">
@@ -232,7 +232,7 @@ export default function Hero() {
             </div>
 
             {/* Right Location Pin Badge (Sitting on the rock cliff) */}
-            <div className="hidden md:flex items-center gap-1.5 text-xs text-white/85 mb-6 shrink-0">
+            <div className="hidden md:flex items-center gap-1.5 text-xs text-white/85 mb-6 shrink-0 pl-4">
               <MapPin className="w-3.5 h-3.5 text-amber-400" />
               <span>Sigiriya, Sri Lanka</span>
             </div>
