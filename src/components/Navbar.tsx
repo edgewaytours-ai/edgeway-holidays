@@ -9,8 +9,7 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-slate-100 shadow-xs">
-      {/* Full-width spacious header container */}
-      <div className="w-full max-w-[1440px] mx-auto px-6 lg:px-12 xl:px-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Brand Logo with Palm & Wave Emblem */}
           <Link href="/" className="flex items-center gap-3.5 group shrink-0">
