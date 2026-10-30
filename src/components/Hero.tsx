@@ -98,62 +98,63 @@ export default function Hero() {
             {/* Search Box Sized to Reach Sustainable Tourism Icon */}
             <div className="w-full lg:max-w-[1080px] xl:max-w-[1100px] min-w-0">
               {/* Folder-Style Attached Tabs */}
-              <div className="flex items-end gap-1 sm:gap-1.5 pl-0.5 sm:pl-1 overflow-x-auto scrollbar-none max-w-full">
+              <div className="grid grid-cols-4 w-full sm:flex sm:w-auto items-end gap-1 sm:gap-1.5 pl-0 sm:pl-1">
                 <button
                   type="button"
                   onClick={() => setActiveTab("tours")}
-                  className={`flex items-center gap-1.5 sm:gap-2 px-3.5 sm:px-6 py-2.5 sm:py-3 rounded-t-xl text-[11px] sm:text-xs md:text-sm font-bold whitespace-nowrap shrink-0 transition-all ${
+                  className={`w-full sm:w-auto flex items-center justify-center gap-1 sm:gap-2 px-1.5 sm:px-6 py-2.5 sm:py-3 rounded-t-xl text-[10px] sm:text-xs md:text-sm font-bold transition-all ${
                     activeTab === "tours"
                       ? "bg-[#063D34] text-white shadow-xs"
                       : "bg-[#E6ECE9] text-slate-700 hover:bg-[#d8e2de]"
                   }`}
                 >
-                  <Compass className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
-                  <span>Tours</span>
+                  <Compass className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
+                  <span className="truncate">Tours</span>
                 </button>
 
                 <button
                   type="button"
                   onClick={() => setActiveTab("packages")}
-                  className={`flex items-center gap-1.5 sm:gap-2 px-3.5 sm:px-6 py-2.5 sm:py-3 rounded-t-xl text-[11px] sm:text-xs md:text-sm font-semibold whitespace-nowrap shrink-0 transition-all ${
+                  className={`w-full sm:w-auto flex items-center justify-center gap-1 sm:gap-2 px-1.5 sm:px-6 py-2.5 sm:py-3 rounded-t-xl text-[10px] sm:text-xs md:text-sm font-semibold transition-all ${
                     activeTab === "packages"
                       ? "bg-[#063D34] text-white shadow-xs"
                       : "bg-[#E6ECE9] text-slate-700 hover:bg-[#d8e2de]"
                   }`}
                 >
-                  <Briefcase className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
-                  <span>Packages</span>
+                  <Briefcase className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
+                  <span className="truncate">Packages</span>
                 </button>
 
                 <button
                   type="button"
                   onClick={() => setActiveTab("transfers")}
-                  className={`flex items-center gap-1.5 sm:gap-2 px-3.5 sm:px-6 py-2.5 sm:py-3 rounded-t-xl text-[11px] sm:text-xs md:text-sm font-semibold whitespace-nowrap shrink-0 transition-all ${
+                  className={`w-full sm:w-auto flex items-center justify-center gap-1 sm:gap-2 px-1.5 sm:px-6 py-2.5 sm:py-3 rounded-t-xl text-[10px] sm:text-xs md:text-sm font-semibold transition-all ${
                     activeTab === "transfers"
                       ? "bg-[#063D34] text-white shadow-xs"
                       : "bg-[#E6ECE9] text-slate-700 hover:bg-[#d8e2de]"
                   }`}
                 >
-                  <Car className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
-                  <span>Transfers</span>
+                  <Car className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
+                  <span className="truncate">Transfers</span>
                 </button>
 
                 <button
                   type="button"
                   onClick={() => setActiveTab("custom")}
-                  className={`flex items-center gap-1.5 sm:gap-2 px-3.5 sm:px-6 py-2.5 sm:py-3 rounded-t-xl text-[11px] sm:text-xs md:text-sm font-semibold whitespace-nowrap shrink-0 transition-all ${
+                  className={`w-full sm:w-auto flex items-center justify-center gap-1 sm:gap-2 px-1.5 sm:px-6 py-2.5 sm:py-3 rounded-t-xl text-[10px] sm:text-xs md:text-sm font-semibold transition-all ${
                     activeTab === "custom"
                       ? "bg-[#063D34] text-white shadow-xs"
                       : "bg-[#E6ECE9] text-slate-700 hover:bg-[#d8e2de]"
                   }`}
                 >
-                  <User className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
-                  <span>Custom Trip</span>
+                  <User className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
+                  <span className="truncate sm:hidden">Custom</span>
+                  <span className="hidden sm:inline">Custom Trip</span>
                 </button>
               </div>
 
               {/* Main White Search Bar */}
-              <div className="bg-white rounded-b-2xl rounded-tr-2xl shadow-[0_12px_32px_rgba(0,0,0,0.12)] border border-slate-100 p-2.5 sm:p-3.5 max-w-full overflow-hidden">
+              <div className="bg-white rounded-b-2xl sm:rounded-tr-2xl shadow-[0_12px_32px_rgba(0,0,0,0.12)] border border-slate-100 p-3 sm:p-3.5 w-full overflow-hidden">
                 <form
                   onSubmit={(e) => {
                     e.preventDefault();
