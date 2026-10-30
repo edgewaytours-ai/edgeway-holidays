@@ -1,6 +1,12 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Plus_Jakarta_Sans, Playfair_Display, Caveat } from "next/font/google";
 import "./globals.css";
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+};
 
 const plusJakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -36,7 +42,7 @@ export default function RootLayout({
       lang="en"
       className={`${plusJakarta.variable} ${playfair.variable} ${caveat.variable} h-full antialiased scroll-smooth`}
     >
-      <body className="min-h-full flex flex-col font-sans bg-[#FBFDFB] text-slate-800 antialiased selection:bg-[#0A3B32] selection:text-white">
+      <body className="min-h-full flex flex-col font-sans bg-[#FBFDFB] text-slate-800 antialiased selection:bg-[#0A3B32] selection:text-white overflow-x-hidden w-full relative">
         {children}
       </body>
     </html>

@@ -87,10 +87,10 @@ export default function PlanYourTripPage() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-50 flex flex-col">
+    <div className="min-h-screen bg-slate-50 flex flex-col w-full overflow-x-hidden">
       <Navbar />
 
-      <main className="flex-1">
+      <main className="flex-1 w-full overflow-x-hidden">
         {/* Header Hero */}
         <section className="relative bg-[#063D34] text-white py-14 lg:py-18 overflow-hidden">
           <div className="absolute inset-0 bg-radial from-emerald-600/10 via-transparent to-transparent pointer-events-none" />

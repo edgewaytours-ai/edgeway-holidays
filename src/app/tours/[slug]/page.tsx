@@ -20,6 +20,8 @@ import {
 } from "lucide-react";
 import { popularToursData, TourDetail } from "@/data/toursData";
 
+export const instant = false;
+
 export function generateStaticParams() {
   return popularToursData.map((tour) => ({
     slug: tour.slug,
@@ -39,10 +41,10 @@ export default async function TourDetailPage({
   }
 
   return (
-    <div className="min-h-screen bg-slate-50 flex flex-col">
+    <div className="min-h-screen bg-slate-50 flex flex-col w-full overflow-x-hidden">
       <Navbar />
 
-      <main className="flex-1">
+      <main className="flex-1 w-full overflow-x-hidden">
         {/* Breadcrumb Bar */}
         <div className="bg-white border-b border-slate-200/80 py-3">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center gap-2 text-xs text-slate-500">

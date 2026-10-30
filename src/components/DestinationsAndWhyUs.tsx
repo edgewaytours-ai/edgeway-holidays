@@ -95,11 +95,11 @@ export default function DestinationsAndWhyUs() {
             </div>
 
             {/* Exact 8-Card Single Row Matching Design Screenshot */}
-            <div className="grid grid-cols-4 sm:grid-cols-8 gap-2 flex-grow">
+            <div className="grid grid-cols-4 sm:grid-cols-8 gap-1.5 sm:gap-2 flex-grow min-w-0">
               {destinations.map((dest, idx) => (
                 <div
                   key={idx}
-                  className="group relative h-40 sm:h-44 rounded-xl overflow-hidden shadow-xs hover:shadow-md transition-all duration-300 cursor-pointer flex flex-col justify-end p-2"
+                  className="group relative h-36 sm:h-44 rounded-xl overflow-hidden shadow-xs hover:shadow-md transition-all duration-300 cursor-pointer flex flex-col justify-end p-1.5 sm:p-2 min-w-0"
                 >
                   <Image
                     src={dest.image}

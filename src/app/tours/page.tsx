@@ -143,10 +143,10 @@ export default function ToursPage() {
   });
 
   return (
-    <div className="flex flex-col min-h-screen bg-[#FBFDFB]">
+    <div className="flex flex-col min-h-screen bg-[#FBFDFB] w-full overflow-x-hidden">
       <Navbar />
 
-      <main className="flex-grow">
+      <main className="flex-grow w-full overflow-x-hidden">
         {/* Page Hero Banner */}
         <section className="relative py-16 bg-[#041A16] text-white">
           <div className="absolute inset-0 z-0 opacity-30">

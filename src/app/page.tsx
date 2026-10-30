@@ -11,11 +11,11 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen w-full overflow-x-hidden">
       {/* 1. Header Navigation */}
       <Navbar />
 
-      <main className="flex-grow">
+      <main className="flex-grow w-full overflow-x-hidden">
         {/* 2. Hero Section with Floating Search Engine */}
         <Hero />
 

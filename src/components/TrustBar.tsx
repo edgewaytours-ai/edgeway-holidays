@@ -35,7 +35,7 @@ export default function TrustBar() {
   ];
 
   return (
-    <section className="pt-16 sm:pt-20 pb-6 border-b border-slate-100 bg-white">
+    <section className="pt-24 sm:pt-28 lg:pt-20 pb-6 border-b border-slate-100 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 items-center">
           {trustItems.map((item, idx) => {

@@ -222,10 +222,10 @@ export default function DestinationsPage() {
   });
 
   return (
-    <div className="min-h-screen bg-slate-50 flex flex-col">
+    <div className="min-h-screen bg-slate-50 flex flex-col w-full overflow-x-hidden">
       <Navbar />
 
-      <main className="flex-1">
+      <main className="flex-1 w-full overflow-x-hidden">
         {/* Hero Section */}
         <section className="relative bg-[#063D34] text-white py-20 lg:py-24 overflow-hidden">
           {/* Subtle background glow */}
