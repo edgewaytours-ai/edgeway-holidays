@@ -20,6 +20,8 @@ import {
 } from "lucide-react";
 import { popularToursData, TourDetail } from "@/data/toursData";
 
+export const dynamic = "force-static";
+
 export function generateStaticParams() {
   return popularToursData.map((tour) => ({
     slug: tour.slug,
