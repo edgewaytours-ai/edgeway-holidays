@@ -9,7 +9,7 @@ export default function MultiDayPackages() {
       title: "Sri Lanka Highlights",
       duration: "7 Days • 6 Nights",
       price: "690",
-      image: "https://images.unsplash.com/photo-1546708973-b339540b5162?q=80&w=800&auto=format&fit=crop",
+      image: "/images/tour-ella.jpg",
       tag: "Classic",
       tagColor: "bg-[#10B981] text-white",
     },
@@ -18,7 +18,7 @@ export default function MultiDayPackages() {
       title: "Coast & Adventure",
       duration: "10 Days • 9 Nights",
       price: "890",
-      image: "https://images.unsplash.com/photo-1530866495561-507c9faab2ed?q=80&w=800&auto=format&fit=crop",
+      image: "/images/pkg-adventure.jpg",
       tag: "Adventure",
       tagColor: "bg-sky-500 text-white",
     },
@@ -27,7 +27,7 @@ export default function MultiDayPackages() {
       title: "Family Discovery Tour",
       duration: "8 Days • 7 Nights",
       price: "990",
-      image: "https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?q=80&w=800&auto=format&fit=crop",
+      image: "/images/pkg-family.jpg",
       tag: "Family",
       tagColor: "bg-amber-500 text-white",
     },
@@ -36,7 +36,7 @@ export default function MultiDayPackages() {
       title: "Sri Lanka Luxury Escape",
       duration: "Custom Itinerary",
       price: "1,290",
-      image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=800&auto=format&fit=crop",
+      image: "/images/pkg-luxury.jpg",
       tag: "Private",
       tagColor: "bg-amber-700 text-amber-100",
     },
@@ -47,7 +47,7 @@ export default function MultiDayPackages() {
       {/* Background Tropical Beach Coastline Panorama Matching Design */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2400&auto=format&fit=crop"
+          src="/images/dest-trinco.jpg"
           alt="Sri Lanka tropical coast"
           fill
           className="object-cover object-center"

@@ -9,21 +9,21 @@ export default function TravelBlog() {
       date: "15 Oct 2024",
       title: "A Complete Guide to Arugam Bay",
       excerpt: "Surf spots, things to do, where to stay and travel tips.",
-      image: "https://images.unsplash.com/photo-1502680390469-be75c86b636f?q=80&w=800&auto=format&fit=crop",
+      image: "/images/tour-arugam.jpg",
     },
     {
       id: "yala-safari-guide",
       date: "10 Oct 2024",
       title: "Yala Safari Guide: What to Expect",
       excerpt: "Wildlife, best times to visit and useful tips.",
-      image: "https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?q=80&w=800&auto=format&fit=crop",
+      image: "/images/tour-yala.jpg",
     },
     {
       id: "ella-travel-guide",
       date: "05 Oct 2024",
       title: "Ella Travel Guide for First-Time Visitors",
       excerpt: "Top attractions, hiking trails and local experiences.",
-      image: "https://images.unsplash.com/photo-1546708973-b339540b5162?q=80&w=800&auto=format&fit=crop",
+      image: "/images/tour-ella.jpg",
     },
   ];
 
