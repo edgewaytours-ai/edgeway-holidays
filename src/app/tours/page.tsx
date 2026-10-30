@@ -305,13 +305,31 @@ export default function ToursPage() {
                           </span>
                         </div>
 
-                        <button
-                          onClick={() => setBookingTour(tour.title)}
-                          className="inline-flex items-center gap-1.5 bg-[#063D34] hover:bg-[#042A24] text-white text-xs font-semibold px-4 py-2.5 rounded-xl transition-colors shadow-xs"
-                        >
-                          <span>Inquire Now</span>
-                          <ArrowRight className="w-3.5 h-3.5" />
-                        </button>
+                        <div className="flex items-center gap-2">
+                          <Link
+                            href={
+                              tour.id === "yala"
+                                ? "/tours/yala-wildlife-safari"
+                                : tour.id === "sigiriya"
+                                ? "/tours/sigiriya-dambulla-tour"
+                                : tour.id === "arugam"
+                                ? "/tours/surf-lessons-in-arugam-bay"
+                                : tour.id === "ella"
+                                ? "/tours/ella-scenic-day-tour"
+                                : `/plan-your-trip?tour=${tour.id}`
+                            }
+                            className="inline-flex items-center gap-1 border border-slate-200 text-slate-700 hover:border-[#063D34] hover:text-[#063D34] text-xs font-semibold px-3 py-2 rounded-xl transition-colors"
+                          >
+                            <span>Details</span>
+                          </Link>
+                          <button
+                            onClick={() => setBookingTour(tour.title)}
+                            className="inline-flex items-center gap-1 bg-[#063D34] hover:bg-[#042A24] text-white text-xs font-semibold px-3 py-2 rounded-xl transition-colors shadow-xs"
+                          >
+                            <span>Inquire</span>
+                            <ArrowRight className="w-3 h-3" />
+                          </button>
+                        </div>
                       </div>
                     </div>
                   </div>
