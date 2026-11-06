@@ -52,7 +52,7 @@ export default function RootLayout({
     "image": "https://edgewayholidays.com/images/hero-sigiriya.jpg",
     "description":
       "Authentic Sri Lanka tours and holiday experiences crafted by locals. Private chauffeur guide tours, wildlife safaris, cultural journeys, and bespoke travel packages.",
-    "telephone": "+94771234567",
+    "telephone": "+94759986585",
     "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",

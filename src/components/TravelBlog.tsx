@@ -5,24 +5,24 @@ import { ArrowRight, Calendar, ArrowUpRight } from "lucide-react";
 export default function TravelBlog() {
   const articles = [
     {
-      id: "arugam-bay-guide",
-      date: "15 Oct 2024",
-      title: "A Complete Guide to Arugam Bay",
-      excerpt: "Surf spots, things to do, where to stay and travel tips.",
-      image: "/images/tour-arugam.jpg",
+      slug: "sri-lanka-10-day-itinerary-private-driver",
+      date: "Nov 2026",
+      title: "Sri Lanka 10-Day Private Tour Itinerary with Driver",
+      excerpt: "Sigiriya, Kandy, Ella scenic blue train, Yala safari, and Galle Fort with a private chauffeur.",
+      image: "/images/hero-sigiriya.jpg",
     },
     {
-      id: "yala-safari-guide",
-      date: "10 Oct 2024",
-      title: "Yala Safari Guide: What to Expect",
-      excerpt: "Wildlife, best times to visit and useful tips.",
-      image: "/images/tour-yala.jpg",
+      slug: "cost-of-private-driver-sri-lanka",
+      date: "Nov 2026",
+      title: "Cost of Private Driver in Sri Lanka (2027 Price Guide)",
+      excerpt: "Daily rates, fuel, toll charges, driver lodging, and tips explained with zero hidden fees.",
+      image: "/images/tour-ella.jpg",
     },
     {
-      id: "ella-travel-guide",
-      date: "05 Oct 2024",
-      title: "Ella Travel Guide for First-Time Visitors",
-      excerpt: "Top attractions, hiking trails and local experiences.",
+      slug: "scenic-train-kandy-ella",
+      date: "Oct 2026",
+      title: "Complete Guide to the Kandy to Ella Scenic Blue Train",
+      excerpt: "1st vs 2nd class reserved seats, timetable schedules, Nine Arch Bridge photo spots & luggage transfer.",
       image: "/images/tour-ella.jpg",
     },
   ];
@@ -42,7 +42,7 @@ export default function TravelBlog() {
           </div>
 
           <Link
-            href="#all-articles"
+            href="/blog"
             className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-[#0A3B32] hover:text-[#10B981] transition-colors group"
           >
             <span>View All Articles</span>
@@ -54,11 +54,11 @@ export default function TravelBlog() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           {articles.map((post) => (
             <article
-              key={post.id}
+              key={post.slug}
               className="group bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-xs hover:shadow-lg transition-all duration-300 flex flex-col justify-between"
             >
               {/* Image with subtle floating circle */}
-              <div className="relative h-48 w-full overflow-hidden">
+              <Link href={`/blog/${post.slug}`} className="relative h-48 w-full overflow-hidden block">
                 <Image
                   src={post.image}
                   alt={post.title}
@@ -69,7 +69,7 @@ export default function TravelBlog() {
                 <div className="absolute top-2.5 right-2.5 w-7 h-7 rounded-full bg-white/25 backdrop-blur-md border border-white/40 flex items-center justify-center text-white group-hover:bg-white group-hover:text-[#0A3B32] transition-colors">
                   <ArrowUpRight className="w-3.5 h-3.5" />
                 </div>
-              </div>
+              </Link>
 
               {/* Text content */}
               <div className="p-5 flex flex-col flex-grow justify-between">
@@ -79,9 +79,11 @@ export default function TravelBlog() {
                     <span>{post.date}</span>
                   </div>
 
-                  <h3 className="font-bold text-slate-900 text-base group-hover:text-[#0A3B32] transition-colors leading-snug">
-                    {post.title}
-                  </h3>
+                  <Link href={`/blog/${post.slug}`}>
+                    <h3 className="font-bold text-slate-900 text-base group-hover:text-[#0A3B32] transition-colors leading-snug">
+                      {post.title}
+                    </h3>
+                  </Link>
 
                   <p className="mt-2 text-xs sm:text-sm text-slate-500 font-light leading-relaxed">
                     {post.excerpt}
@@ -90,7 +92,7 @@ export default function TravelBlog() {
 
                 <div className="mt-4 pt-3 border-t border-slate-50">
                   <Link
-                    href={`#post-${post.id}`}
+                    href={`/blog/${post.slug}`}
                     className="inline-flex items-center gap-1 text-xs font-bold text-[#0A3B32] group-hover:text-[#10B981] transition-colors"
                   >
                     <span>Read Article</span>

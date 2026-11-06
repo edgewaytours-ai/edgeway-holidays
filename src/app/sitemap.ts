@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { popularToursData } from "@/data/toursData";
+import { blogPostsData } from "@/data/blogData";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://edgewayholidays.com";
@@ -64,5 +65,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.9,
   }));
 
-  return [...staticRoutes, ...tourRoutes];
+  // Dynamic travel guide / blog routes
+  const blogRoutes: MetadataRoute.Sitemap = blogPostsData.map((post) => ({
+    url: `${baseUrl}/blog/${post.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly",
+    priority: 0.85,
+  }));
+
+  return [...staticRoutes, ...tourRoutes, ...blogRoutes];
 }

@@ -32,17 +32,43 @@ interface BlogPost {
 
 const blogPosts: BlogPost[] = [
   {
+    id: "sri-lanka-10-day-itinerary-private-driver",
+    title: "Sri Lanka 10-Day Private Tour Itinerary with Driver (2027 Complete Guide)",
+    excerpt:
+      "The ultimate 10-day Sri Lanka itinerary covering Sigiriya, Kandy, Ella scenic train, Yala safari, and Galle with an English-speaking private driver.",
+    category: "guide",
+    categoryLabel: "Tour Itinerary",
+    image: "/images/hero-sigiriya.jpg",
+    date: "November 2026",
+    readTime: "9 min read",
+    author: "Edgeway Tours Specialist",
+    featured: true,
+  },
+  {
+    id: "cost-of-private-driver-sri-lanka",
+    title: "Cost of Private Driver in Sri Lanka (2027 Price Guide & Hidden Fees)",
+    excerpt:
+      "How much does a private driver in Sri Lanka really cost? Transparent breakdown of daily rates, vehicle types, tolls, tips, and avoiding hidden charges.",
+    category: "guide",
+    categoryLabel: "Cost & Budget",
+    image: "/images/tour-ella.jpg",
+    date: "November 2026",
+    readTime: "7 min read",
+    author: "Pradeep Wickramasinghe",
+    featured: false,
+  },
+  {
     id: "scenic-train-kandy-ella",
     title: "The Complete Guide to the Scenic Blue Train from Kandy to Ella",
     excerpt:
-      "Everything you need to know about booking 1st vs 2nd class reserved seats, timetable schedules, crossing the iconic 1921 Nine Arch Bridge, and taking the classic open-door photograph safely.",
+      "Everything you need to know about booking 1st vs 2nd class reserved seats, timetable schedules, crossing the iconic 1921 Nine Arch Bridge, and baggage transfers.",
     category: "guide",
     categoryLabel: "Train Journeys",
     image: "/images/tour-ella.jpg",
-    date: "October 24, 2024",
+    date: "October 2026",
     readTime: "6 min read",
     author: "Ruwan Senanayake",
-    featured: true,
+    featured: false,
   },
   {
     id: "best-time-weather-guide",
@@ -242,7 +268,7 @@ export default function BlogPage() {
                   </div>
 
                   <Link
-                    href={`/plan-your-trip`}
+                    href={`/blog/${featuredPost.id}`}
                     className="inline-flex items-center gap-1.5 text-xs font-bold text-[#063D34] hover:underline"
                   >
                     <span>Read Article</span>
@@ -310,7 +336,7 @@ export default function BlogPage() {
                     <div className="mt-5 pt-4 border-t border-slate-100 flex items-center justify-between text-xs">
                       <span className="text-slate-500 font-medium">By {post.author}</span>
                       <Link
-                        href="/plan-your-trip"
+                        href={`/blog/${post.id}`}
                         className="font-bold text-[#0A3B32] hover:underline inline-flex items-center gap-1"
                       >
                         Read More <ChevronRight className="w-3.5 h-3.5" />
