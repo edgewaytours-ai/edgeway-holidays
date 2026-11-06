@@ -1,36 +1,36 @@
-import { Users, ShieldCheck, Star, Award, Headset, Leaf } from "lucide-react";
+import { Users, ShieldCheck, Star, Award, Headset, Sparkles } from "lucide-react";
 
 export default function TrustBar() {
   const trustItems = [
     {
       icon: Users,
-      title: "1K+",
+      title: "1,200+",
       subtitle: "Happy Travellers",
     },
     {
       icon: ShieldCheck,
-      title: "Local",
-      subtitle: "Sri Lankan Team",
+      title: "15% Deposit",
+      subtitle: "Balance on Arrival",
     },
     {
       icon: Star,
-      title: "4.9/5",
+      title: "4.9 / 5.0",
       subtitle: "Customer Rating",
     },
     {
       icon: Award,
-      title: "Trusted Guides",
-      subtitle: "& Partners",
+      title: "SLTDA Licensed",
+      subtitle: "Certified Chauffeurs",
     },
     {
       icon: Headset,
-      title: "24/7",
-      subtitle: "Support",
+      title: "24/7 WhatsApp",
+      subtitle: "+94 75 998 6585",
     },
     {
-      icon: Leaf,
-      title: "Sustainable",
-      subtitle: "Tourism",
+      icon: Sparkles,
+      title: "100% Bespoke",
+      subtitle: "Custom Itineraries",
     },
   ];
 

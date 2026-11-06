@@ -20,6 +20,7 @@ import {
   ArrowLeft,
 } from "lucide-react";
 import { popularToursData, TourDetail } from "@/data/toursData";
+import { siteConfig } from "@/data/siteConfig";
 
 export const instant = false;
 
@@ -261,24 +262,35 @@ export default async function TourDetailPage({
                   {/* Fast Booking CTA */}
                   <div className="mt-5 space-y-3">
                     <a
-                      href={`https://wa.me/94771234567?text=Hello%20EdgewayTours,%20I%20would%20like%20to%20book%20the%20${encodeURIComponent(
+                      href={`https://wa.me/${siteConfig.whatsappNumber}?text=Hello%20Edgeway%20Tours,%20I%20would%20like%20to%20book%20the%20${encodeURIComponent(
                         tour.title
                       )}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-full inline-flex items-center justify-center gap-2 py-3.5 rounded-full bg-[#25D366] text-white font-bold text-xs sm:text-sm shadow-sm hover:brightness-105 transition-all"
+                      className="w-full inline-flex items-center justify-center gap-2 py-3.5 rounded-full bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold text-xs sm:text-sm shadow-md transition-all transform hover:-translate-y-0.5"
                     >
                       <MessageCircle className="w-4 h-4" />
-                      <span>Book Instantly on WhatsApp</span>
+                      <span>Book on WhatsApp ({siteConfig.whatsappDisplay})</span>
                     </a>
 
                     <Link
                       href={`/plan-your-trip?tour=${tour.id}`}
                       className="w-full inline-flex items-center justify-center gap-2 py-3 rounded-full bg-[#063D34] hover:bg-[#042A24] text-white font-bold text-xs sm:text-sm shadow-sm transition-all"
                     >
-                      <span>Customize / Request Quote</span>
+                      <span>Customize / Request Free Quote</span>
                       <ArrowRight className="w-4 h-4" />
                     </Link>
+                  </div>
+
+                  {/* Trust & Guarantee Box */}
+                  <div className="mt-5 p-3.5 rounded-2xl bg-emerald-50/70 border border-emerald-100 text-[11px] text-emerald-950 space-y-1.5">
+                    <div className="font-bold text-emerald-800 flex items-center gap-1.5">
+                      <ShieldCheck className="w-3.5 h-3.5 text-emerald-600" />
+                      <span>Peace of Mind Booking Guarantee</span>
+                    </div>
+                    <p className="text-slate-600 leading-snug">
+                      Reserve your dates with just a <strong>15–20% advance deposit</strong>. Pay the remaining balance in cash (USD, EUR, or LKR) after meeting your driver in Sri Lanka.
+                    </p>
                   </div>
 
                   <div className="mt-6 pt-5 border-t border-slate-100 space-y-2 text-xs text-slate-600">
@@ -309,6 +321,26 @@ export default async function TourDetailPage({
             </div>
           </div>
         </section>
+
+        {/* Mobile Sticky Booking Bar */}
+        <div className="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-slate-200 px-4 py-3 flex items-center justify-between shadow-2xl">
+          <div>
+            <span className="text-[10px] text-slate-400 block leading-tight">Starting from</span>
+            <span className="text-lg font-extrabold text-[#063D34]">US$ {tour.price}</span>
+            <span className="text-[10px] text-slate-500 ml-1">/ person</span>
+          </div>
+          <a
+            href={`https://wa.me/${siteConfig.whatsappNumber}?text=Hello%20Edgeway%20Tours,%20I%20would%20like%20to%20book%20the%20${encodeURIComponent(
+              tour.title
+            )}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-full bg-[#25D366] text-white font-bold text-xs shadow-md"
+          >
+            <MessageCircle className="w-4 h-4" />
+            <span>Book on WhatsApp</span>
+          </a>
+        </div>
       </main>
 
       <Footer />

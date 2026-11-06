@@ -536,12 +536,23 @@ export default function PopularTours() {
                 <span>Licensed Sri Lanka Tourist Chauffeur-Guides</span>
               </div>
 
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-2 sm:gap-3">
+                <a
+                  href={`https://wa.me/${siteConfig.whatsappNumber}?text=Hello%20Edgeway%20Tours,%20I%20am%20interested%20in%20the%20${encodeURIComponent(
+                    activeModalTour.title
+                  )}%20tour.`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-3.5 py-1.5 rounded-lg bg-[#25D366] hover:bg-[#20bd5a] text-white text-xs font-bold inline-flex items-center gap-1.5 shadow-xs transition-colors"
+                >
+                  <MessageCircle className="w-3.5 h-3.5" />
+                  <span className="hidden sm:inline">WhatsApp</span>
+                </a>
                 <Link
                   href={`/tours/${activeModalTour.slug}`}
                   className="text-xs font-bold text-[#063D34] hover:underline inline-flex items-center gap-1"
                 >
-                  <span>Open Full Tour Page</span>
+                  <span>Full Details</span>
                   <ExternalLink className="w-3.5 h-3.5" />
                 </Link>
                 <button
