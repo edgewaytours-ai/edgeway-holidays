@@ -32,6 +32,19 @@ interface BlogPost {
 
 const blogPosts: BlogPost[] = [
   {
+    id: "hire-driver-in-sri-lanka",
+    title: "Hire Driver in Sri Lanka: 7 Mistakes (Avoid Scams)",
+    excerpt:
+      "Planning to hire a driver in Sri Lanka? Avoid these 7 costly mistakes, commission scams, and hidden fees. Read our 2027 guide to book with peace of mind.",
+    category: "guide",
+    categoryLabel: "Driver & Transport",
+    image: "/images/hire-driver-in-sri-lanka.jpg",
+    date: "November 2026",
+    readTime: "8 min read",
+    author: "Malik Fernando",
+    featured: true,
+  },
+  {
     id: "sri-lanka-10-day-itinerary-private-driver",
     title: "Sri Lanka 10-Day Private Tour Itinerary with Driver (2027 Complete Guide)",
     excerpt:
@@ -42,7 +55,7 @@ const blogPosts: BlogPost[] = [
     date: "November 2026",
     readTime: "9 min read",
     author: "Edgeway Tours Specialist",
-    featured: true,
+    featured: false,
   },
   {
     id: "cost-of-private-driver-sri-lanka",
