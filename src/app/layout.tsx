@@ -27,9 +27,13 @@ const caveat = Caveat({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://edgewayholidays.com"),
   title: "EDGEWAYTOURS | Explore Sri Lanka Differently",
   description:
     "Authentic Sri Lanka tours and holiday experiences crafted by locals who love their island. Discover safaris, ancient kingdoms, beaches, and scenic railways.",
+  verification: {
+    google: "IErtFBv6zjRRQG-vzDnoNb2Cj-H7jsHyf5smixIqjF4",
+  },
 };
 
 export default function RootLayout({

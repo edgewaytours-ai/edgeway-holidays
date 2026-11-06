@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -26,6 +27,31 @@ export function generateStaticParams() {
   return popularToursData.map((tour) => ({
     slug: tour.slug,
   }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const tour = popularToursData.find((t) => t.slug === slug || t.id === slug);
+
+  if (!tour) {
+    return {
+      title: "Tour Not Found | EDGEWAYTOURS",
+    };
+  }
+
+  return {
+    title: `${tour.title} | Edgeway Tours Sri Lanka`,
+    description: tour.shortDescription,
+    openGraph: {
+      title: `${tour.title} - Sri Lanka Tour`,
+      description: tour.shortDescription,
+      images: [tour.image],
+    },
+  };
 }
 
 export default async function TourDetailPage({
