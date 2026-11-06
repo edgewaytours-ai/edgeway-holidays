@@ -15,6 +15,7 @@ import {
   MessageCircle,
 } from "lucide-react";
 import { multiDayPackagesData, PackageDetail } from "@/data/toursData";
+import { siteConfig } from "@/data/siteConfig";
 
 export default function MultiDayPackages() {
   const [activePackageModal, setActivePackageModal] = useState<PackageDetail | null>(null);
@@ -239,7 +240,7 @@ export default function MultiDayPackages() {
                       We will email your full day-by-day customized PDF quotation to <strong>{inquiryEmail}</strong> within 24 hours.
                     </p>
                     <a
-                      href={`https://wa.me/94771234567?text=Hello%20EdgewayTours,%20I%20am%20inquiring%20about%20the%20${encodeURIComponent(activePackageModal.title)}%20package`}
+                      href={`https://wa.me/${siteConfig.whatsappNumber}?text=Hello%20EdgewayTours,%20I%20am%20inquiring%20about%20the%20${encodeURIComponent(activePackageModal.title)}%20package`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-[#25D366] text-white text-xs font-bold mt-2"

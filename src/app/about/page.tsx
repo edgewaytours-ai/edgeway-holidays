@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { siteConfig } from "@/data/siteConfig";
 import {
   ShieldCheck,
   Users,
@@ -278,7 +279,14 @@ export default function AboutPage() {
                 </p>
                 <div className="mt-5 pt-4 border-t border-emerald-800/60 flex items-center justify-between text-xs">
                   <span className="text-emerald-300">24/7 Island Support Hotline:</span>
-                  <span className="font-bold text-white">+94 77 123 4567</span>
+                  <a
+                    href={`https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent(siteConfig.defaultWhatsAppMessage)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-bold text-white hover:text-emerald-300 transition-colors"
+                  >
+                    {siteConfig.whatsappDisplay}
+                  </a>
                 </div>
               </div>
             </div>

@@ -66,8 +66,32 @@ export default async function TourDetailPage({
     notFound();
   }
 
+  const tourJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "TouristTrip",
+    name: tour.title,
+    description: tour.shortDescription,
+    touristType: "Sightseeing, Nature, Culture, Adventure",
+    offers: {
+      "@type": "Offer",
+      price: tour.price,
+      priceCurrency: "USD",
+      availability: "https://schema.org/InStock",
+      url: `https://edgewayholidays.com/tours/${tour.slug}`,
+    },
+    provider: {
+      "@type": "TravelAgency",
+      name: "Edgeway Tours",
+      url: "https://edgewayholidays.com",
+    },
+  };
+
   return (
     <div className="min-h-screen bg-slate-50 flex flex-col w-full overflow-x-hidden">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(tourJsonLd) }}
+      />
       <Navbar />
 
       <main className="flex-1 w-full overflow-x-hidden">

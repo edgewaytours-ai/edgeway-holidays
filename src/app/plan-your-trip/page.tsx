@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { siteConfig } from "@/data/siteConfig";
 import {
   Compass,
   Check,
@@ -608,7 +609,7 @@ export default function PlanYourTripPage() {
 
             <div className="mt-6 flex flex-col gap-3">
               <a
-                href="https://wa.me/94771234567?text=Hello%20EdgewayTours,%20I%20just%20submitted%20a%20trip%20request%20on%20your%20website!"
+                href={`https://wa.me/${siteConfig.whatsappNumber}?text=Hello%20EdgewayTours,%20I%20just%20submitted%20a%20trip%20request%20on%20your%20website!`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-[#25D366] text-white font-bold text-xs sm:text-sm shadow-sm hover:brightness-105 transition-all"

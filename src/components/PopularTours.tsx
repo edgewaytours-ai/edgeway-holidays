@@ -22,6 +22,7 @@ import {
   ExternalLink,
 } from "lucide-react";
 import { popularToursData, TourDetail } from "@/data/toursData";
+import { siteConfig } from "@/data/siteConfig";
 
 export default function PopularTours() {
   const [favorites, setFavorites] = useState<{ [key: string]: boolean }>({});
@@ -407,7 +408,7 @@ export default function PopularTours() {
 
                       <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-3">
                         <a
-                          href={`https://wa.me/94771234567?text=Hello%20EdgewayTours,%20I%20am%20inquiring%20about%20booking%20the%20${encodeURIComponent(
+                          href={`https://wa.me/${siteConfig.whatsappNumber}?text=Hello%20EdgewayTours,%20I%20am%20inquiring%20about%20booking%20the%20${encodeURIComponent(
                             activeModalTour.title
                           )}`}
                           target="_blank"
