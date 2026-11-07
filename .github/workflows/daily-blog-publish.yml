@@ -1,0 +1,39 @@
+name: Daily SEO Blog Cloud Publisher
+
+on:
+  schedule:
+    # 19:30 UTC = 1:00 AM Sri Lanka Time (UTC+5:30) every day
+    - cron: '30 19 * * *'
+  workflow_dispatch: # Allows 1-click manual trigger from GitHub Actions dashboard
+
+permissions:
+  contents: write
+
+jobs:
+  publish-daily-post:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Codebase
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Publish Next Queued Post & Ping Search Engines
+        run: node scripts/publish-next-post.mjs
+
+      - name: Commit and Push Changes to Main
+        run: |
+          git config user.name "Edgeway Cloud Publisher"
+          git config user.email "publisher@edgewayholidays.com"
+          git add -A
+          if git diff --staged --quiet; then
+            echo "No queued blog post was published. Working tree clean."
+          else
+            git commit -m "feat(blog): automated daily cloud publish [skip ci]"
+            git push origin main
+          fi

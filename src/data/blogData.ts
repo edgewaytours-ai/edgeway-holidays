@@ -27,6 +27,67 @@ export interface BlogPost {
 
 export const blogPostsData: BlogPost[] = [
   {
+  "slug": "private-car-with-driver-vs-self-drive-sri-lanka",
+  "title": "Private Car with Driver vs Self-Drive Sri Lanka (2027)",
+  "metaTitle": "Private Car with Driver vs Self-Drive Sri Lanka (2027)",
+  "metaDescription": "Planning a trip? Compare private car with driver vs self-drive in Sri Lanka. Fuel, mountain roads, traffic scams, and real costs in our 2027 guide.",
+  "category": "cost",
+  "categoryLabel": "Transport & Cost",
+  "image": "/images/private-car-with-driver-vs-self-drive-sri-lanka.jpg",
+  "date": "November 2026",
+  "readTime": "8 min read",
+  "author": "Ruwan Senanayake",
+  "authorRole": "Senior Route Specialist",
+  "featured": false,
+  "content": {
+    "intro": "When planning your holiday, choosing between a private car with driver vs self-drive in Sri Lanka is one of the most important decisions you will make. While the idea of renting a car and exploring independently sounds romantic, navigating chaotic mountain buses, unpredictable pedestrian traffic, and complex international driving permits makes self-drive far more stressful than travelers anticipate. Hiring a dedicated chauffeur guide lets you relax, take in the views, and travel with total peace of mind.",
+    "sections": [
+      {
+        "heading": "1. Road Safety & Local Driving Culture in Sri Lanka",
+        "body": "Driving in Sri Lanka operates on an unwritten hierarchy where vehicle size dictates right of way. Red government buses frequently overtake on blind mountain bends, while street dogs, cows, and three-wheelers share narrow roads without warning.",
+        "list": [
+          "With a Private Chauffeur: Your certified chauffeur knows how to navigate aggressive traffic, road works, and steep mountain switchbacks safely.",
+          "With Self-Drive: The driver must maintain 100% white-knuckle focus on oncoming traffic, missing out on scenic tea hills, waterfalls, and photography."
+        ]
+      },
+      {
+        "heading": "2. Hidden Costs of Renting & Self-Driving in Sri Lanka",
+        "body": "Many travelers assume self-driving is cheaper, but when calculating mandatory local permits, deposits, and fuel, the price difference is surprisingly small:",
+        "list": [
+          "Sri Lanka AAC Endorsement: An International Driving Permit (IDP) alone is invalid. You must pay $35 to $50 USD to endorse your license at the Automobile Association in Colombo.",
+          "Security Deposits: Car hire firms place a $500 to $1,000 USD hold on your credit card for minor scratch deductibles.",
+          "Fuel & Toll Expenses: Self-drivers pay pump rates out-of-pocket, whereas tour operators include unlimited itinerary fuel and tolls."
+        ]
+      },
+      {
+        "heading": "3. The Scenic Kandy to Ella Train Luggage Dilemma",
+        "body": "The iconic blue train from Kandy to Ella is the highlight of any Sri Lanka trip. If you rent a self-drive car, someone in your group must sacrifice the train journey to drive the rental car through mountain passes.",
+        "list": [
+          "The Private Driver Advantage: Everyone in your party boards the train together with only daypacks. Your driver transports all heavy suitcases ahead to your Ella hotel and greets you at the arrival platform."
+        ]
+      },
+      {
+        "heading": "4. Stress Levels & Holiday Relaxation",
+        "body": "Your Sri Lankan vacation should be about soaking in tropical beaches, tea plantations, and ancient kingdoms—not getting lost in rural rubber estates or arguing over GPS directions."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Can tourists legally self-drive in Sri Lanka?",
+        "a": "Yes, but your International Driving Permit (IDP) must be officially verified and endorsed by the Automobile Association of Ceylon (AAC) in Colombo before you can legally drive."
+      },
+      {
+        "q": "How much does a private car with driver cost in Sri Lanka?",
+        "a": "A modern air-conditioned sedan car with a dedicated English-speaking chauffeur costs just $55 to $70 USD per day all-inclusive (covering fuel, tolls, insurance, and driver lodging)."
+      },
+      {
+        "q": "What happens if a rental vehicle breaks down?",
+        "a": "Self-drive rental agencies often take 6 to 12 hours to send assistance to remote hill regions. With Edgeway Tours, our island-wide support network guarantees immediate replacement vehicles."
+      }
+    ]
+  }
+},
+  {
     slug: "hire-driver-in-sri-lanka",
     title: "Hire Driver in Sri Lanka: 7 Mistakes (Avoid Scams)",
     metaTitle: "Hire Driver in Sri Lanka: 7 Mistakes (Avoid Scams)",

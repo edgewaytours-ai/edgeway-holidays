@@ -21,7 +21,7 @@ interface BlogPost {
   id: string;
   title: string;
   excerpt: string;
-  category: "guide" | "wildlife" | "culture" | "surf" | "food";
+  category: "guide" | "wildlife" | "culture" | "surf" | "food" | "cost" | "itinerary";
   categoryLabel: string;
   image: string;
   date: string;
@@ -31,6 +31,18 @@ interface BlogPost {
 }
 
 const blogPosts: BlogPost[] = [
+  {
+  "id": "private-car-with-driver-vs-self-drive-sri-lanka",
+  "title": "Private Car with Driver vs Self-Drive Sri Lanka (2027)",
+  "excerpt": "Planning a trip? Compare private car with driver vs self-drive in Sri Lanka. Fuel, mountain roads, traffic scams, and real costs in our 2027 guide.",
+  "category": "cost",
+  "categoryLabel": "Transport & Cost",
+  "image": "/images/private-car-with-driver-vs-self-drive-sri-lanka.jpg",
+  "date": "November 2026",
+  "readTime": "8 min read",
+  "author": "Ruwan Senanayake",
+  "featured": false
+},
   {
     id: "hire-driver-in-sri-lanka",
     title: "Hire Driver in Sri Lanka: 7 Mistakes (Avoid Scams)",
