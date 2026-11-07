@@ -32,6 +32,18 @@ interface BlogPost {
 
 const blogPosts: BlogPost[] = [
   {
+  "id": "colombo-airport-to-sigiriya-private-transfer",
+  "title": "Colombo Airport to Sigiriya Private Transfer (2027 Guide)",
+  "excerpt": "Colombo airport to Sigiriya private transfer rates, highway travel time, night pickups, and scenic stops. Book your direct 2027 chauffeur transfer.",
+  "category": "guide",
+  "categoryLabel": "Airport Transfers",
+  "image": "/images/colombo-airport-to-sigiriya-private-transfer.jpg",
+  "date": "November 2026",
+  "readTime": "7 min read",
+  "author": "Ruwan Senanayake",
+  "featured": false
+},
+  {
   "id": "colombo-airport-taxi-vs-private-driver",
   "title": "Colombo Airport Taxi vs Private Driver (10-Day Cost)",
   "excerpt": "Colombo airport taxi vs private driver: compare real costs, arrival scams, vehicle comfort, and luggage limits. Complete 2027 traveler guide.",

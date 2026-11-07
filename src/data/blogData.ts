@@ -27,6 +27,61 @@ export interface BlogPost {
 
 export const blogPostsData: BlogPost[] = [
   {
+  "slug": "colombo-airport-to-sigiriya-private-transfer",
+  "title": "Colombo Airport to Sigiriya Private Transfer (2027 Guide)",
+  "metaTitle": "Colombo Airport to Sigiriya Private Transfer (2027 Guide)",
+  "metaDescription": "Colombo airport to Sigiriya private transfer rates, highway travel time, night pickups, and scenic stops. Book your direct 2027 chauffeur transfer.",
+  "category": "guide",
+  "categoryLabel": "Airport Transfers",
+  "image": "/images/colombo-airport-to-sigiriya-private-transfer.jpg",
+  "date": "November 2026",
+  "readTime": "7 min read",
+  "author": "Ruwan Senanayake",
+  "authorRole": "Cultural Triangle Lead",
+  "featured": false,
+  "content": {
+    "intro": "Arranging a colombo airport to sigiriya private transfer is the smoothest way to begin your Sri Lankan adventure. Rather than losing a full travel day on slow multi-transfer public buses, a direct air-conditioned private vehicle delivers you directly to your hotel in the Cultural Triangle in just 3.5 to 4 hours via the modern Central Expressway.",
+    "sections": [
+      {
+        "heading": "1. Distance, Route & Travel Time in 2027",
+        "body": "The journey spans approximately 145 kilometers (90 miles) northeast from Bandaranaike International Airport (CMB) to Sigiriya.",
+        "list": [
+          "Travel Time: Approximately 3.5 hours via the Central Expressway (E04) through Mirigama and Kurunegala.",
+          "Road Quality: Excellent paved highways with modern service rest stops offering clean restrooms, Ceylon tea, and fresh king coconut."
+        ]
+      },
+      {
+        "heading": "2. Transfer Rates & What Is Included",
+        "body": "Standard rates for a private door-to-door transfer from Colombo Airport to Sigiriya in 2027 are:",
+        "list": [
+          "Sedan Car (1–2 passengers): $70 to $85 USD total per vehicle.",
+          "Toyota KDH Luxury Mini-Van (3–6 passengers): $95 to $115 USD total per vehicle.",
+          "All highway toll gates, fuel, commercial passenger insurance, and airport parking are 100% included."
+        ]
+      },
+      {
+        "heading": "3. Optional En-Route Sightseeing Stops",
+        "body": "Because this is a private transfer, you can customize your schedule with scenic stops:",
+        "list": [
+          "Dambulla Golden Cave Temple: Explore UNESCO ancient cave shrines without taking a separate day trip.",
+          "Pinnawala Elephant Mill: Watch herds bathing along the riverbanks if taking the scenic Kurunegala bypass.",
+          "Tropical Fruit Stalls: Sample fresh red bananas, mangoes, and sweet pineapples along the highway."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "How long does a private transfer from Colombo Airport to Sigiriya take?",
+        "a": "Via the expressway, the journey takes 3.5 to 4 hours depending on the exact location of your resort in Sigiriya or Habarana."
+      },
+      {
+        "q": "Can we stop for food or currency exchange along the way?",
+        "a": "Yes. Your chauffeur will gladly stop at reliable ATMs, currency exchange counters, or recommended local restaurants whenever you wish."
+      }
+    ]
+  }
+},
+  {
   "slug": "colombo-airport-taxi-vs-private-driver",
   "title": "Colombo Airport Taxi vs Private Driver (10-Day Cost)",
   "metaTitle": "Colombo Airport Taxi vs Private Driver (10-Day Cost)",
