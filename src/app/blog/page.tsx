@@ -32,6 +32,18 @@ interface BlogPost {
 
 const blogPosts: BlogPost[] = [
   {
+  "id": "colombo-airport-taxi-vs-private-driver",
+  "title": "Colombo Airport Taxi vs Private Driver (10-Day Cost)",
+  "excerpt": "Colombo airport taxi vs private driver: compare real costs, arrival scams, vehicle comfort, and luggage limits. Complete 2027 traveler guide.",
+  "category": "cost",
+  "categoryLabel": "Airport & Transport",
+  "image": "/images/colombo-airport-taxi-vs-private-driver.jpg",
+  "date": "November 2026",
+  "readTime": "8 min read",
+  "author": "Pradeep Wickramasinghe",
+  "featured": false
+},
+  {
   "id": "private-car-with-driver-vs-self-drive-sri-lanka",
   "title": "Private Car with Driver vs Self-Drive Sri Lanka (2027)",
   "excerpt": "Planning a trip? Compare private car with driver vs self-drive in Sri Lanka. Fuel, mountain roads, traffic scams, and real costs in our 2027 guide.",
