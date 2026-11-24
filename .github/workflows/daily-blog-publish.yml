@@ -34,6 +34,6 @@ jobs:
           if git diff --staged --quiet; then
             echo "No queued blog post was published. Working tree clean."
           else
-            git commit -m "feat(blog): automated daily cloud publish [skip ci]"
+            git commit -m "feat(blog): automated daily cloud publish"
             git push origin main
           fi

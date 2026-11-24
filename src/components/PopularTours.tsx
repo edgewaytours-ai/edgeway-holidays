@@ -265,7 +265,7 @@ export default function PopularTours() {
               ].map((tab) => (
                 <button
                   key={tab.id}
-                  onClick={() => setActiveModalTab(tab.id as any)}
+                  onClick={() => setActiveModalTab(tab.id as "overview" | "itinerary" | "included" | "book")}
                   className={`py-3 px-3 text-xs sm:text-sm font-bold border-b-2 whitespace-nowrap transition-colors ${
                     activeModalTab === tab.id
                       ? "border-[#063D34] text-[#063D34]"

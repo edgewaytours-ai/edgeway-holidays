@@ -1,31 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Calendar, ArrowUpRight } from "lucide-react";
+import { blogPostsData } from "@/data/blogData";
 
 export default function TravelBlog() {
-  const articles = [
-    {
-      slug: "sri-lanka-10-day-itinerary-private-driver",
-      date: "Nov 2026",
-      title: "Sri Lanka 10-Day Private Tour Itinerary with Driver",
-      excerpt: "Sigiriya, Kandy, Ella scenic blue train, Yala safari, and Galle Fort with a private chauffeur.",
-      image: "/images/hero-sigiriya.jpg",
-    },
-    {
-      slug: "cost-of-private-driver-sri-lanka",
-      date: "Nov 2026",
-      title: "Cost of Private Driver in Sri Lanka (2027 Price Guide)",
-      excerpt: "Daily rates, fuel, toll charges, driver lodging, and tips explained with zero hidden fees.",
-      image: "/images/tour-ella.jpg",
-    },
-    {
-      slug: "scenic-train-kandy-ella",
-      date: "Oct 2026",
-      title: "Complete Guide to the Kandy to Ella Scenic Blue Train",
-      excerpt: "1st vs 2nd class reserved seats, timetable schedules, Nine Arch Bridge photo spots & luggage transfer.",
-      image: "/images/tour-ella.jpg",
-    },
-  ];
+  const articles = blogPostsData.slice(0, 3).map((p) => ({
+    slug: p.slug,
+    date: p.date,
+    title: p.title,
+    excerpt: p.metaDescription,
+    image: p.image,
+  }));
 
   return (
     <section id="blog" className="py-10 md:py-12 bg-[#F8FAF9]">

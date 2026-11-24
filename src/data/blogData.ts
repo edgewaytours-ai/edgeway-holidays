@@ -3,7 +3,7 @@ export interface BlogPost {
   title: string;
   metaTitle: string;
   metaDescription: string;
-  category: "itinerary" | "guide" | "cost" | "wildlife" | "culture";
+  category: "itinerary" | "guide" | "cost" | "wildlife" | "culture" | "surf" | "food";
   categoryLabel: string;
   image: string;
   date: string;
@@ -428,6 +428,302 @@ export const blogPostsData: BlogPost[] = [
         {
           q: "How far in advance do train tickets open?",
           a: "Reserved Sri Lanka Railway tickets open exactly 30 days prior to the travel date and often sell out within hours. Edgeway Tours can arrange reserved seat bookings for our guests in advance.",
+        },
+      ],
+    },
+  },
+  {
+    slug: "best-time-weather-guide",
+    title: "Best Time to Visit Sri Lanka: Month-by-Month Weather Breakdown",
+    metaTitle: "Best Time to Visit Sri Lanka: Weather & Season Guide (2027)",
+    metaDescription:
+      "Navigating Sri Lanka's dual monsoons: discover the best months for beaches, wildlife safaris, and tea country with sunny weather year-round.",
+    category: "guide",
+    categoryLabel: "Travel Planning",
+    image: "/images/hero-sigiriya.jpg",
+    date: "November 2026",
+    readTime: "8 min read",
+    author: "Malik Fernando",
+    authorRole: "Senior Travel Designer",
+    featured: false,
+    content: {
+      intro:
+        "One of Sri Lanka's greatest geographical blessings is its dual monsoon climate. Unlike destinations with a single rainy season that shuts down tourism across the entire country, Sri Lanka always has a sunny coast and clear skies waiting somewhere on the island at any given time of the year. Whether you are traveling in December, July, or April, timing your route between the Southwest and Northeast coasts ensures perfect tropical weather.",
+      sections: [
+        {
+          heading: "1. Understanding Sri Lanka's Two Monsoons",
+          body: "Sri Lanka experiences two alternating monsoon patterns that govern ocean currents, rainfall, and sunshine hours:",
+          list: [
+            "The Yala Monsoon (May to September): Brings rain and heavy surf to the South Coast (Galle, Mirissa) and West Coast (Bentota, Negombo), while making the East Coast (Trincomalee, Pasikuda, Arugam Bay) calm, dry, and crystal-clear.",
+            "The Maha Monsoon (October to January): Brings rainfall to the North and East, while opening the prime travel season on the South, Southwest, and Central Cultural Triangle.",
+            "The Inter-Monsoon Shoulder Months (March - April & September - October): Warm, calm seas across much of the island with intermittent late-afternoon tropical showers.",
+          ],
+        },
+        {
+          heading: "2. High Season (December to April): The Classic Golden Route",
+          body: "This is Sri Lanka's premier holiday window. During these months, the Southwest Coast basks in 8 to 9 hours of uninterrupted sunshine daily, with flat calm ocean conditions ideal for whale watching in Mirissa, swimming in Unawatuna, and walking along the ramparts of Galle Fort.",
+          list: [
+            "Ideal Destinations: Colombo, Sigiriya, Kandy, Nuwara Eliya, Yala, Mirissa, and Galle.",
+            "Key Activities: Blue whale spotting in Mirissa, leopard game drives in Yala, and tea harvesting walks in Nuwara Eliya.",
+          ],
+        },
+        {
+          heading: "3. Summer Season (May to September): The East Coast Riviera",
+          body: "While European tourists often think of Sri Lanka as a winter getaway, summer is actually the best-kept secret. The eastern coastline features calm turquoise bays, powdery white sand, and world-class right-hand surf breaks.",
+          list: [
+            "Ideal Destinations: Trincomalee, Nilaveli Beach, Pigeon Island Marine Park, Arugam Bay, and Minneriya National Park.",
+            "The Great Elephant Gathering: July to September witnesses hundreds of Asian elephants gathering at Minneriya reservoir—one of Asia's most spectacular wildlife phenomena.",
+          ],
+        },
+        {
+          heading: "4. Month-by-Month Quick Reference",
+          body: "Here is where to go based on your holiday month:",
+          list: [
+            "January – March: Prime time for Cultural Triangle, Hill Country, and Southern beaches.",
+            "April: Sinhalese & Tamil New Year festive season; calm seas islandwide.",
+            "May – August: Unbeatable weather on the East Coast (Trincomalee & Arugam Bay) and Cultural Triangle.",
+            "September – October: Low crowd levels; excellent safari conditions in Wilpattu & Minneriya.",
+            "November – December: Start of winter peak; prime whale migration off Mirissa.",
+          ],
+        },
+      ],
+      faq: [
+        {
+          q: "Is there a bad month to visit Sri Lanka?",
+          a: "No. Because Sri Lanka's two weather systems alternate opposite coasts, you can always enjoy sunny beaches and outdoor tours by choosing the correct side of the island.",
+        },
+        {
+          q: "When is the best time for wildlife safaris?",
+          a: "Yala and Wilpattu are best from February to July when waterholes dry up and animals congregate. Minneriya is world-famous from July to September for the Asian elephant gathering.",
+        },
+      ],
+    },
+  },
+  {
+    slug: "wildlife-safaris-beyond-yala",
+    title: "Top 7 Wildlife Safaris in Sri Lanka: Beyond Just Yala",
+    metaTitle: "Top 7 Sri Lanka Wildlife Safaris (Beyond Yala National Park)",
+    metaDescription:
+      "Explore Sri Lanka's finest safari parks: Minneriya elephant gathering, Wilpattu leopard trails, Udawalawe herds, and Bundala bird reserves.",
+    category: "wildlife",
+    categoryLabel: "Wildlife & Safari",
+    image: "/images/tour-yala.jpg",
+    date: "November 2026",
+    readTime: "8 min read",
+    author: "Ruwan Senanayake",
+    authorRole: "Lead Wildlife Naturalist",
+    featured: false,
+    content: {
+      intro:
+        "While Yala National Park rightfully enjoys global fame for possessing one of the highest leopard densities on earth, Sri Lanka boasts more than 26 national parks covering an astonishing 13% of the country's landmass. Exploring beyond the crowded main trails of Yala reveals quieter sanctuaries where wild Asian elephants, elusive sloth bears, and endemic birds thrive in untamed serenity.",
+      sections: [
+        {
+          heading: "1. Wilpattu National Park: Ancient Lakes & Elusive Big Cats",
+          body: "Sri Lanka's largest and oldest national park, Wilpattu is characterized by unique natural sand-rimmed water basins called 'Villus'. Because jeep traffic here is strictly regulated, leopard sightings feel profoundly intimate and natural.",
+          list: [
+            "Primary Sightings: Sri Lankan Leopard (Panthera pardus kotiya), Sloth Bear, Barking Deer, and Mugger Crocodiles.",
+            "Best Visiting Season: February through October when villu water levels drop.",
+          ],
+        },
+        {
+          heading: "2. Minneriya & Kaudulla: The Great Elephant Gathering",
+          body: "Every year during the dry season (July to September), up to 300 wild Asian elephants gather along the receding banks of the ancient Minneriya reservoir. It is recognized by Lonely Planet and National Geographic as one of the world's Top 10 wildlife spectacles.",
+          list: [
+            "Highlight: Watching elephant matriarchs protect playful calves as herds graze and splash in the water at sunset.",
+          ],
+        },
+        {
+          heading: "3. Udawalawe National Park: Guaranteed Year-Round Elephant Encounters",
+          body: "With its open savannah grasslands reminiscent of East Africa, Udawalawe guarantees elephant encounters on virtually every safari drive throughout all 12 months.",
+          list: [
+            "Special Stop: The Elephant Transit Home (ETH), where orphaned baby elephants are rehabilitated before being reintroduced into the wild.",
+          ],
+        },
+        {
+          heading: "4. Bundala National Park: UNESCO Ramsar Wetland for Birders",
+          body: "Located along the southern coast near Hambantota, Bundala is an internationally celebrated biosphere reserve where thousands of migratory flamingos, painted storks, and spoonbills roost along coastal lagoons.",
+        },
+        {
+          heading: "5. Kumana National Park: The Wild Eastern Frontier",
+          body: "Adjoining Yala to the east, Kumana features massive mangrove swamps and pelican nesting colonies, frequented by adventurous wildlife photographers taking day trips from Arugam Bay.",
+        },
+      ],
+      faq: [
+        {
+          q: "Which park is best for seeing leopards?",
+          a: "Yala National Park Block 1 and Wilpattu National Park are the premier locations for leopard tracking in Sri Lanka.",
+        },
+        {
+          q: "What should I wear on a Sri Lankan jeep safari?",
+          a: "Wear neutral earth tones (khaki, olive, beige) in lightweight cotton or linen. Avoid bright neon colors that can startle wild animals.",
+        },
+      ],
+    },
+  },
+  {
+    slug: "arugam-bay-surf-guide",
+    title: "A Surfer's Guide to Arugam Bay & The Southern Coast",
+    metaTitle: "A Surfer's Guide to Arugam Bay & Southern Sri Lanka (2027)",
+    metaDescription:
+      "Complete breakdown of Sri Lanka's top surf breaks: Arugam Bay Main Point, Peanut Farm, Weligama, Hiriketiya, seasons, and board rentals.",
+    category: "surf",
+    categoryLabel: "Surfing & Ocean",
+    image: "/images/tour-arugam.jpg",
+    date: "November 2026",
+    readTime: "7 min read",
+    author: "Malik Fernando",
+    authorRole: "Coastal & Surf Guide",
+    featured: false,
+    content: {
+      intro:
+        "With over 1,340 kilometers of warm Indian Ocean coastline, Sri Lanka is a world-class surfing playground. Thanks to the island's dual seasons, world-class waves break on the East Coast from May to September and on the South Coast from November to April, creating 365 days of surfing heaven.",
+      sections: [
+        {
+          heading: "1. The East Coast Epicenter: Arugam Bay (May to September)",
+          body: "Arugam Bay is consistently ranked among the world's top ten point breaks. Known for long, peeling right-hand waves over sand and soft reef, it accommodates everything from seasoned wave rippers to progressing intermediates.",
+          list: [
+            "Main Point: Long 400-meter right-hand cobblestone and reef point producing fast walls and occasional barrels.",
+            "Whiskey Point: Ideal for beginners and longboarders with clean sandy peeling rights.",
+            "Peanut Farm: A legendary bohemian spot set against jungle lagoons where wild elephants occasionally wander nearby.",
+            "Elephant Rock: Scenic point break with dramatic panoramic sunset cliffs.",
+          ],
+        },
+        {
+          heading: "2. The South Coast Wave Hub: Weligama to Hiriketiya (Nov to April)",
+          body: "During European winter, the action shifts to the Southern Province:",
+          list: [
+            "Weligama Bay: Sri Lanka's undisputed capital for surf lessons, offering gentle, forgiving beach breaks on soft sand.",
+            "Hiriketiya Horseshoe Bay: A trendy turquoise cove nestled inside coconut palms with a mellow beach break for novices and a peeling left-hand reef break for advanced surfers.",
+            "Midigama & Rams: Hollow, punchy reef waves for experienced shortboard riders.",
+          ],
+        },
+        {
+          heading: "3. Surf Board Rentals & Local Lesson Rates",
+          body: "Surfing in Sri Lanka is remarkably affordable compared to Bali or Hawaii. High-grade fiberglass and soft-top boards rent for $8 to $12 USD per day, while 1-on-1 certified ISA surf lessons cost approximately $20 to $30 USD per session.",
+        },
+      ],
+      faq: [
+        {
+          q: "What is the best surf season in Sri Lanka?",
+          a: "May through September for Arugam Bay (East Coast); November through April for Weligama, Hiriketiya, and Midigama (South Coast).",
+        },
+        {
+          q: "Is Sri Lanka suitable for total beginner surfers?",
+          a: "Yes! Weligama Bay and Whiskey Point have gentle waist-deep sandy bottoms, making them two of the safest places in the world to learn to surf.",
+        },
+      ],
+    },
+  },
+  {
+    slug: "temple-etiquette-clothing",
+    title: "What to Wear at Sri Lankan Temples: Respectful Traveler's Guide",
+    metaTitle: "What to Wear at Sri Lankan Temples: Dress Code & Etiquette",
+    metaDescription:
+      "Dress code guidelines, shoe removal, Buddha statue etiquette, and respectful cultural photography tips for visiting sacred temples in Sri Lanka.",
+    category: "culture",
+    categoryLabel: "Culture & Etiquette",
+    image: "/images/exp-culture.jpg",
+    date: "November 2026",
+    readTime: "6 min read",
+    author: "Pradeep Wickramasinghe",
+    authorRole: "Cultural Tour Director",
+    featured: false,
+    content: {
+      intro:
+        "Visiting ancient shrines like the Temple of the Sacred Tooth Relic in Kandy, the UNESCO Dambulla Cave Temples, or the sacred bo trees of Anuradhapura is the spiritual heart of any Sri Lankan journey. Because these are active places of deep Buddhist worship, respecting sacred dress codes and behavioral customs ensures a warm welcome from local communities.",
+      sections: [
+        {
+          heading: "1. The Core Dress Code: Modesty & Light Colors",
+          body: "Buddhist temple etiquette in Sri Lanka centers on humility and purity:",
+          list: [
+            "Cover Shoulders and Knees: Tank tops, sleeveless shirts, short shorts, and mini-skirts are strictly prohibited at temple entry gates.",
+            "Wear White or Light Colors: While not mandatory for visitors, white is the traditional Buddhist color of purity. Wearing white or pastel shades is deeply appreciated by local worshippers.",
+            "Pack a Sarong or Light Scarf: Carrying a light sarong in your daypack allows you to quickly cover bare shoulders or wrap around your waist before passing temple security.",
+          ],
+        },
+        {
+          heading: "2. Footwear & Headwear Rules",
+          body: "Upon reaching the inner sanctum of any Buddhist or Hindu shrine:",
+          list: [
+            "Remove Shoes and Hats: Shoes, sandals, and headwear must be deposited at the shoe deposit counters located at the entrance.",
+            "Pro Tip - Bring Socks: The stone courtyards of Anuradhapura and Polonnaruwa can become scorching hot under the midday tropical sun. Wearing thick cotton socks protects your feet from hot stone floors.",
+          ],
+        },
+        {
+          heading: "3. Photography Etiquette with Buddha Statues",
+          body: "The most important cultural rule in Sri Lanka involves photography:",
+          list: [
+            "NEVER Pose with Your Back to the Buddha: Turning your back to a Buddha statue (especially for a selfie) is considered deeply disrespectful and can lead to immediate reprimand or official penalties.",
+            "Always Face Forward: To capture photos of statues, stand to the side or take pictures of the artwork without posing in front.",
+            "Buddha Tattoos: Displaying tattoos of the Buddha on visible limbs is offensive in Sri Lankan law. Travelers with Buddha tattoos should ensure they are covered with clothing while in public.",
+          ],
+        },
+      ],
+      faq: [
+        {
+          q: "Can I wear jeans to a Sri Lankan temple?",
+          a: "Yes, long jeans or trousers that cover your knees and ankles are acceptable, though loose linen or cotton pants are far more comfortable in tropical heat.",
+        },
+        {
+          q: "Are shoes allowed when walking around Sigiriya Rock Fortress?",
+          a: "Yes! Sigiriya is an archaeological royal fortress, so hiking shoes or sneakers are permitted everywhere except the small monastic caves.",
+        },
+      ],
+    },
+  },
+  {
+    slug: "authentic-sri-lankan-food",
+    title: "10 Authentic Sri Lankan Dishes You Must Try Beyond Rice & Curry",
+    metaTitle: "10 Authentic Sri Lankan Foods You Must Try (Local Cuisine Guide)",
+    metaDescription:
+      "Discover real Sri Lankan cuisine: crispy hoppers, pol sambol, kottu roti, ambul thiyal, watalappan, and street food favorites for foodies.",
+    category: "food",
+    categoryLabel: "Food & Culinary",
+    image: "/images/exp-local.jpg",
+    date: "November 2026",
+    readTime: "7 min read",
+    author: "Pradeep Wickramasinghe",
+    authorRole: "Culinary & Heritage Specialist",
+    featured: false,
+    content: {
+      intro:
+        "Layered with fragrant roasted spices, rich coconut milk, fresh curry leaves, and spicy local chilis, Sri Lankan cuisine is one of the world's most vibrant gastronomic treasures. While a traditional daily lunch features rice and curry, island gastronomy offers an incredible array of unique street foods, crispy breakfast doughs, and slow-cooked earthen clay pot stews.",
+      sections: [
+        {
+          heading: "1. The Iconic Breakfast: Egg Hoppers (Appa)",
+          body: "Bowl-shaped pancakes made from fermented rice flour and creamy coconut milk, cooked in miniature spherical woks until the rim is paper-thin and crispy while the center remains pillowy soft. An egg dropped in the center creates the beloved 'Egg Hopper', served with fresh spicy lunu miris (crushed shallots, chili flakes, lime, and Maldive fish).",
+        },
+        {
+          heading: "2. The Nighttime Sensation: Kottu Roti",
+          body: "Walk through any Sri Lankan town after dusk and you will hear the rhythmic, musical clatter of metal cleavers chopping against a heated iron griddle. Flaky godamba flatbread is chopped together with crisp vegetables, scrambled eggs, savory curry gravy, and tender chicken or beef.",
+        },
+        {
+          heading: "3. Slow-Cooked Clay Pot Classics",
+          body: "Regional cooking techniques rely on unglazed clay pots and wood fires:",
+          list: [
+            "Fish Ambul Thiyal (Sour Fish Curry): Fresh tuna cubed and simmered in dried goraka (black tamarind), black pepper, and curry leaves. It is delightfully tart, smoky, and intensely rich.",
+            "Pol Sambol: Freshly grated coconut scraped daily, crushed by stone with sun-dried chili, shallots, lime, and cured Maldive fish.",
+            "Parippu (Creamy Dhal): Yellow lentils cooked in sweet coconut milk, cumin seeds, garlic, and fresh pandan leaves.",
+          ],
+        },
+        {
+          heading: "4. Street Snacks & Sweet Endings",
+          body: "Don't miss these local favorites during village stops:",
+          list: [
+            "Short Eats: Crispy vegetable roti triangles, fish cutlets, and spicy egg rolls sold in roadside bakeries.",
+            "Watalappan: A decadent spiced coconut custard pudding steamed with dark Kithul jaggery palm treacle, cardamom, and toasted cashews.",
+            "King Coconut (Thambili): Golden organic coconuts sliced fresh on the roadside for pure refreshing hydration.",
+          ],
+        },
+      ],
+      faq: [
+        {
+          q: "Is Sri Lankan food very spicy?",
+          a: "Traditional food has plenty of chili kick, but when booking with Edgeway Tours or dining in restaurants, you can always request 'mild spice' or 'tourist spice'.",
+        },
+        {
+          q: "Is Sri Lanka friendly for vegetarians and vegans?",
+          a: "Sri Lanka is one of the best countries in Asia for plant-based eaters! Because coconut milk is used instead of dairy and hundreds of native vegetables, jackfruits, and lentils are featured daily, delicious vegan dishes abound.",
         },
       ],
     },
