@@ -1,7 +1,5 @@
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
-import fs from "node:fs";
-import path from "node:path";
 import { siteConfig } from "@/data/siteConfig";
 
 export async function POST(req: Request) {
@@ -35,21 +33,7 @@ export async function POST(req: Request) {
       },
     });
 
-    const logoPath = path.join(process.cwd(), "public", "logo.png");
-    const hasLocalLogo = fs.existsSync(logoPath);
-    const logoSrc = hasLocalLogo
-      ? "cid:edgeway-logo"
-      : `${siteConfig.url}/logo.png`;
-    const logoAttachment = hasLocalLogo
-      ? [
-          {
-            filename: "edgeway-logo.png",
-            content: fs.readFileSync(logoPath),
-            cid: "edgeway-logo",
-            contentDisposition: "inline" as const,
-          },
-        ]
-      : [];
+    const logoSrc = `${siteConfig.url}/logo.png`;
 
     // 1. Send Welcome Email to the Subscriber
     const welcomeHtml = `
@@ -120,7 +104,6 @@ export async function POST(req: Request) {
       to: email,
       subject: "Welcome to Edgeway Holidays and Tours — Your Sri Lanka Travel Inspiration 🌴",
       html: welcomeHtml,
-      attachments: logoAttachment,
     });
 
     // Send admin notification
@@ -130,7 +113,6 @@ export async function POST(req: Request) {
       replyTo: email,
       subject: `[New Subscriber] ${email}`,
       html: adminHtml,
-      attachments: logoAttachment,
     });
 
     return NextResponse.json({
