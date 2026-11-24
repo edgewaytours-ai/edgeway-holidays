@@ -32,6 +32,18 @@ interface BlogPost {
 
 const blogPosts: BlogPost[] = [
   {
+  "id": "sri-lanka-honeymoon-private-driver-guide",
+  "title": "Sri Lanka Honeymoon with a Private Driver (2027 Luxury Guide)",
+  "excerpt": "Plan your dream Sri Lanka honeymoon: luxury boutique tea villas, secluded southern beaches, private safari jeeps, and seamless chauffeur travel.",
+  "category": "guide",
+  "categoryLabel": "Romance & Honeymoons",
+  "image": "/images/pkg-luxury.jpg",
+  "date": "November 2026",
+  "readTime": "8 min read",
+  "author": "Ruwan Senanayake",
+  "featured": false
+},
+  {
     id: "colombo-airport-to-mirissa-transfer-cost",
     title: "Colombo Airport to Mirissa Transfer (2027 Cost & Route)",
     excerpt: "Colombo airport to Mirissa private transfer rates, Southern Expressway travel time, night pickups, and vehicle options. Book your 2027 chauffeur transfer.",
