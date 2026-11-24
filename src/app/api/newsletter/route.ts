@@ -13,18 +13,14 @@ export async function POST(req: Request) {
       );
     }
 
-    const host = process.env.SMTP_HOST || "smtp.hostinger.com";
+    const host = (process.env.SMTP_HOST || "smtp.hostinger.com").trim();
     const port = Number(process.env.SMTP_PORT) || 465;
-    const user = process.env.SMTP_USER || "info@edgewayholidays.com";
-    const pass = process.env.SMTP_PASS;
+    const user = (process.env.SMTP_USER || "info@edgewayholidays.com").trim();
+    let pass = (process.env.SMTP_PASS || "Rifkyshahi1079@#").trim();
 
-    // If SMTP password is not set yet, log and return success so UX is smooth
-    if (!pass) {
-      console.log(`[Newsletter Submission - SMTP_PASS not set]: ${email}`);
-      return NextResponse.json({
-        success: true,
-        message: "Subscribed successfully! (Pending SMTP configuration)",
-      });
+    // If dotenv stripped the trailing '#' because '#' is a comment in .env files
+    if (pass === "Rifkyshahi1079@" || pass.endsWith("@")) {
+      pass = `${pass}#`;
     }
 
     const transporter = nodemailer.createTransport({
