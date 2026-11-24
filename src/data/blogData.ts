@@ -728,4 +728,325 @@ export const blogPostsData: BlogPost[] = [
       ],
     },
   },
+  {
+    slug: "colombo-airport-to-mirissa-transfer-cost",
+    title: "Colombo Airport to Mirissa Transfer (2027 Cost & Route)",
+    metaTitle: "Colombo Airport to Mirissa Transfer: 2027 Rates & Highway Guide",
+    metaDescription:
+      "Colombo airport to Mirissa private transfer rates, Southern Expressway travel time, night pickups, and vehicle options. Book your 2027 chauffeur transfer.",
+    category: "cost",
+    categoryLabel: "Airport Transfers",
+    image: "/images/dest-mirissa.jpg",
+    date: "November 2026",
+    readTime: "8 min read",
+    author: "Pradeep Wickramasinghe",
+    authorRole: "Airport Logistics Coordinator",
+    featured: false,
+    content: {
+      intro:
+        "Arranging a colombo airport to mirissa transfer is the most comfortable and reliable way to kick off your southern Sri Lanka beach holiday. Spanning approximately 175 kilometers (108 miles), traveling via the high-speed Southern Expressway (E01) brings you straight from the Bandaranaike International Airport (CMB) terminal to your beachfront hotel or surf villa in just 2.5 to 3 hours, completely bypassing slow coastal traffic jams.",
+      sections: [
+        {
+          heading: "1. Southern Expressway Route, Travel Distance & Timing in 2027",
+          body: "The journey takes travelers directly onto the Airport Expressway (E03), circling Colombo via the Outer Circular Expressway (E02), and connecting directly to the Southern Expressway (E01) straight to the Weligama/Kokmaduwa exit.",
+          list: [
+            "Travel Time: 2.5 to 3 hours in an air-conditioned private vehicle under normal traffic conditions.",
+            "Road Quality: 100% four-lane modern tarmac highway with modern rest stops (Canowin Arcade) offering clean restrooms, cafes, and fresh Ceylon tea.",
+            "Compared to Coastal Trains or Buses: Public transport takes 5 to 6 hours with multiple terminal transfers, crowded carriages, and no luggage space.",
+          ],
+        },
+        {
+          heading: "2. Private Transfer Rates & Transparent Vehicle Options",
+          body: "Standard fixed rates for an all-inclusive private transfer from Colombo Airport to Mirissa in 2027 are:",
+          list: [
+            "Air-Conditioned Sedan (1–2 passengers): $80 to $95 USD total per vehicle (Toyota Prius, Axio, or Premio).",
+            "Toyota KDH Luxury Mini-Van (3–6 passengers): $110 to $130 USD total per vehicle with spacious luggage boot and dual AC.",
+            "Inclusions: 100% vehicle fuel, all Southern Expressway toll charges, commercial passenger insurance, driver lodging, and CMB airport parking are fully covered.",
+            "Zero Hidden Costs: Unlike freelance taxi counters, Edgeway quotes are guaranteed fixed with zero arrival surcharges or baggage fees.",
+          ],
+        },
+        {
+          heading: "3. Warning: Avoid Arrival Hall Touts & $45 Cheap Quotes",
+          body: "Landing after a long flight exposes travelers to unverified freelance drivers offering unrealistically cheap quotes ($45 to $55 USD). Fuel and expressway tolls alone exceed $35 for this route. Drivers operating at these cut-rate prices make their profit by forcing tired passengers into commercial commission stops (spice gardens, gem mines, overpriced tourist restaurants) where they collect up to 40% kickbacks.",
+          list: [
+            "Edgeway Tours Guarantees 0% Forced Shopping Stops: Your chauffeur drives you straight to your Mirissa resort with zero commercial detours.",
+            "15% Flexible Deposit Guarantee: Reserve your transfer with just 15% deposit online, and pay the remaining balance in cash after arriving safely at your hotel.",
+          ],
+        },
+        {
+          heading: "4. Late-Night & Early-Morning Pickups (24/7 Flight Tracking)",
+          body: "Whether your flight lands at 2:00 AM or midday, our airport coordinators monitor flight radar in real time. Your English-speaking chauffeur waits inside the arrivals hall holding a personalized name board, helps you load all suitcases, and ensures a peaceful, safe journey to the south coast.",
+        },
+      ],
+      faq: [
+        {
+          q: "How long does a private taxi from Colombo Airport to Mirissa take?",
+          a: "Via the Southern Expressway (E01), the transfer takes between 2.5 and 3 hours door-to-door, depending on the exact location of your resort in Mirissa or Weligama.",
+        },
+        {
+          q: "Are expressway toll fees included in the fare?",
+          a: "Yes! All Southern Expressway and Airport Expressway toll gate receipts are 100% included in every Edgeway Tours transfer quote.",
+        },
+        {
+          q: "Can we stop for an ATM, SIM card, or coffee along the expressway?",
+          a: "Yes, your private chauffeur will happily stop at the modern expressway service plaza (Canowin Arcade) for clean restrooms, ATMs, coffee, or tropical fruit stalls.",
+        },
+      ],
+    },
+  },
+  {
+    slug: "south-coast-sri-lanka-best-towns-to-stay",
+    title: "South Coast Sri Lanka Season: Best Towns to Stay (2027 Guide)",
+    metaTitle: "South Coast Sri Lanka Season 2027: Where to Stay & Best Towns",
+    metaDescription:
+      "Planning your South Coast Sri Lanka holiday? Compare Galle, Weligama, Mirissa, Hiriketiya, and Tangalle for weather, beaches, surfing, and private driver travel.",
+    category: "guide",
+    categoryLabel: "South Coast Season",
+    image: "/images/exp-beach.jpg",
+    date: "November 2026",
+    readTime: "9 min read",
+    author: "Malik Fernando",
+    authorRole: "South Coast Travel Designer",
+    featured: false,
+    content: {
+      intro:
+        "When planning your trip during the south coast sri lanka season (November to April), deciding where to base yourself along this sun-drenched 120-kilometer coastal ribbon is your most important choice. With flat calm turquoise seas, golden sand beaches, oceanfront seafood feasts, and whale watching in full swing, each coastal town possesses its own distinct personality. Having a dedicated private driver allows you to experience multiple towns seamlessly without getting stuck in one spot.",
+      sections: [
+        {
+          heading: "1. The South Coast Season Weather Window (Nov to April)",
+          body: "Between November and late April, the Southwest Monsoon clears, blessing the southern coastline with 8 to 9 hours of golden tropical sunshine daily, gentle offshore breezes, and crystal-clear swimming conditions.",
+          list: [
+            "Peak Weather Months: December, January, February, and March offer dry sunny days and calm ocean conditions.",
+            "Ocean Temperature: A bath-warm 28°C (82°F) year-round, ideal for snorkeling with sea turtles and swimming.",
+          ],
+        },
+        {
+          heading: "2. Town-by-Town Breakdown: Which South Coast Town Fits You?",
+          body: "Here is an honest breakdown of the top coastal towns from west to east:",
+          list: [
+            "Galle Dutch Fort: Best for culture, history, cobblestone boutique walking, colonial architecture, and fine dining. Ideal for a 1-to-2-night romantic stay.",
+            "Unawatuna: Best for safe family swimming in a protected cove, lively beachside cocktail lounges, and coral reef boat rides.",
+            "Weligama: Sri Lanka's undisputed surf lesson hub, featuring wide sandy beaches with gentle, rolling beginner waves and trendy cafes.",
+            "Mirissa: The epicenter of blue whale watching, coconut palm viewpoint photos, sunset beach clubs, and fresh seafood barbecue on the sand.",
+            "Hiriketiya: A bohemian horseshoe bay lined with coconut palms, artisanal bakeries, yoga shalas, and peeling left-hand point breaks.",
+            "Tangalle: For couples seeking tranquility, secluded cliffside five-star resorts (like Amanwella & Anantara), empty wild beaches, and turtle nesting.",
+          ],
+        },
+        {
+          heading: "3. Traveling Between South Coast Towns with a Private Driver",
+          body: "While coastal trains are scenic, they only run a few times a day and stop only at main stations. Local tuk-tuks get noisy, hot, and tiring for journeys over 20 minutes. Hiring a dedicated private chauffeur from Edgeway Tours costs just $55 to $75 USD per day, giving you an air-conditioned car 24/7 to hop effortlessly between morning surf in Weligama, sunset dinner in Galle Fort, and late cocktails in Mirissa.",
+        },
+        {
+          heading: "4. Warning: Avoiding High-Commission Shopping Traps on the Coast",
+          body: "Roadside drivers in beach towns frequently push tourists toward 'famous moonstone mines' or 'Ayurvedic spice gardens' in Meetiyagoda and Koggala where prices are inflated 500% to pay driver kickbacks. Edgeway Tours operates on a strict 0% forced commission policy—your itinerary is 100% focused on authentic coastal culture and scenery.",
+        },
+      ],
+      faq: [
+        {
+          q: "Which is better: Mirissa or Weligama?",
+          a: "Weligama is better if your primary goal is learning to surf or enjoying modern hipster cafes. Mirissa has superior nightlife, whale watching charters, and prettier sunset headlands.",
+        },
+        {
+          q: "How many days should I spend on Sri Lanka's South Coast?",
+          a: "We recommend spending at least 4 to 6 days on the South Coast to balance beach relaxation with day excursions to Galle Fort, Udawalawe safaris, and rainforests.",
+        },
+        {
+          q: "Can a private driver stay with us on the South Coast?",
+          a: "Yes! Your Edgeway private driver stays near your hotels with driver accommodation included in the package, ready to transport you anywhere along the coast at a moment's notice.",
+        },
+      ],
+    },
+  },
+  {
+    slug: "colombo-airport-to-galle-private-taxi",
+    title: "Colombo Airport to Galle Private Taxi (2027 Price Guide)",
+    metaTitle: "Colombo Airport to Galle Private Taxi 2027: Rates & Travel Time",
+    metaDescription:
+      "Fastest way from Colombo Airport to Galle Fort via Southern Expressway (E01). Fixed rates, tolls included, flight tracking, and private chauffeur perks.",
+    category: "cost",
+    categoryLabel: "Airport & Transport",
+    image: "/images/colombo-airport-taxi-vs-private-driver.jpg",
+    date: "November 2026",
+    readTime: "7 min read",
+    author: "Pradeep Wickramasinghe",
+    authorRole: "Airport Logistics Coordinator",
+    featured: false,
+    content: {
+      intro:
+        "Booking a colombo airport to galle private taxi is the fastest, safest, and most stress-free way to reach the historic UNESCO ramparts of Galle Fort or the golden beaches of Unawatuna directly after landing. Spanning 155 kilometers (96 miles), taking the Southern Expressway (E01) cuts travel time down to just 2 to 2.5 hours, providing a smooth air-conditioned escape from exhausting long-haul international flights.",
+      sections: [
+        {
+          heading: "1. Colombo Airport (CMB) to Galle Transfer Rates for 2027",
+          body: "Standard all-inclusive rates for a private door-to-door transfer from Colombo International Airport directly to your hotel in Galle or Unawatuna are:",
+          list: [
+            "Air-Conditioned Sedan (1–2 passengers): $65 to $80 USD total per vehicle (Toyota Prius, Axio, or Premio).",
+            "Toyota KDH Luxury Mini-Van (3–6 passengers): $90 to $110 USD total per vehicle with spacious luggage boot and dual AC.",
+            "100% All-Inclusive: Fuel, Southern Expressway toll gates, airport parking, driver lodging, and passenger commercial insurance are all fully covered.",
+          ],
+        },
+        {
+          heading: "2. Highway Route vs Old Galle Road: Why the Expressway Matters",
+          body: "In the past, traveling from Colombo to Galle took 4 to 5 hours along the congested coastal A2 road behind belching buses and congested intersections. Today, the Southern Expressway (E01) bypasses all city traffic, exiting smoothly at the Pinnaduwa or Galle interchange just 10 minutes from the historic fort gate.",
+        },
+        {
+          heading: "3. Pre-Booked Chauffeur vs Hailing a Taxi at Airport Counters",
+          body: "While official airport taxi counters exist inside the CMB arrival lounge, rates are often variable ($85 to $110 USD for compact hatchbacks with rooftop luggage straps). When you pre-book with Edgeway Tours:",
+          list: [
+            "Your chauffeur greets you inside the air-conditioned arrival lounge with a personalized name card.",
+            "Complimentary flight radar monitoring ensures your driver is waiting even if your flight is delayed.",
+            "Safe, modern Japanese vehicles with dedicated boot space for full-sized suitcases.",
+            "15% flexible deposit booking policy with the remaining balance paid in Sri Lanka.",
+          ],
+        },
+      ],
+      faq: [
+        {
+          q: "How long does a private taxi from Colombo Airport to Galle Fort take?",
+          a: "Via the Southern Expressway (E01), the trip takes approximately 2 hours door-to-door.",
+        },
+        {
+          q: "Can we get dropped off directly inside Galle Fort?",
+          a: "Yes, our private vehicles can drop you off directly at any boutique hotel or villa inside the pedestrian ramparts of Galle Fort.",
+        },
+        {
+          q: "Do we have to pay extra if our flight lands past midnight?",
+          a: "No! Edgeway Tours operates 24/7 airport pickups with zero night surcharges.",
+        },
+      ],
+    },
+  },
+  {
+    slug: "colombo-to-hiriketiya-private-transfer-cost",
+    title: "Colombo to Hiriketiya Private Transfer (2027 Travel Time)",
+    metaTitle: "Colombo to Hiriketiya Private Transfer: 2027 Rates & Travel Time",
+    metaDescription:
+      "Traveling from Colombo or the airport to Hiriketiya Bay? Private chauffeur transfer rates, Southern Expressway extension to Beliatta, and scenic stops.",
+    category: "guide",
+    categoryLabel: "Transport & Surf",
+    image: "/images/pkg-luxury.jpg",
+    date: "November 2026",
+    readTime: "8 min read",
+    author: "Ruwan Senanayake",
+    authorRole: "South Coast Route Specialist",
+    featured: false,
+    content: {
+      intro:
+        "Arranging a colombo to hiriketiya private transfer is the ultimate shortcut to reaching Sri Lanka's trendiest coastal horseshoe bay. Located approximately 190 kilometers (118 miles) south of Colombo, Hiriketiya is famed for its lush coconut jungle canopy, bohemian cafes, and world-class year-round surfing. Thanks to the newly completed Southern Expressway extension to Beliatta, travel time in a private air-conditioned vehicle has dropped to just 2.5 to 3 hours.",
+      sections: [
+        {
+          heading: "1. The Modern Route: Southern Expressway Extension (E01 to Beliatta)",
+          body: "Historically, traveling to Hiriketiya and Dikwella meant spending 5 to 6 hours navigating bumpy coastal roads. Today, the Southern Expressway extends all the way past Matara directly to the Beliatta interchange, just 15 minutes north of Hiriketiya Bay.",
+          list: [
+            "Travel Time: 2.5 to 3 hours from Colombo / CMB Airport.",
+            "Road Conditions: High-speed four-lane expressway all the way to Beliatta, followed by a scenic short jungle drive.",
+          ],
+        },
+        {
+          heading: "2. Private Transfer Costs & Vehicle Capacities",
+          body: "Current 2027 rates for private chauffeur transfers to Hiriketiya Bay:",
+          list: [
+            "Air-Conditioned Sedan (1–2 passengers): $85 to $105 USD total per car.",
+            "Toyota KDH Luxury Mini-Van (3–6 passengers): $115 to $135 USD total per vehicle with ample capacity for luggage, longboards, and surfboards.",
+            "Included In All Quotes: All highway toll fees, fuel, driver allowance, and door-to-door hotel delivery.",
+          ],
+        },
+        {
+          heading: "3. Surfboard Capacity & Traveling with Surf Equipment",
+          body: "Hiriketiya is a beloved surf hub. Many surfers travel with multiple shortboards or 9-foot longboards. Standard street taxis and tuk-tuks cannot accommodate large board bags safely. When booking an Edgeway Toyota KDH luxury van, your driver comes prepared with spacious interior folding seats and secure tie-downs for surfboards up to 9'6\".",
+        },
+        {
+          heading: "4. Scenic En-Route Stops Along the South Coast",
+          body: "Because this is a bespoke private transfer, you can turn your drive into a scenic coastal tour:",
+          list: [
+            "Dondra Head Lighthouse: Sri Lanka's southernmost continental point and tallest maritime lighthouse.",
+            "Hummanaya Blowhole in Kudawella: The second-largest natural sea blowhole in the world.",
+            "Roadside King Coconuts & Fresh Papayas along the Dikwella coastline.",
+          ],
+        },
+      ],
+      faq: [
+        {
+          q: "Can a private van transport 9-foot longboards to Hiriketiya?",
+          a: "Yes! Our Toyota KDH luxury vans easily accommodate multiple longboards up to 9'6\" inside the air-conditioned cabin.",
+        },
+        {
+          q: "How far is Hiriketiya Bay from the Beliatta expressway exit?",
+          a: "Beliatta interchange is only 14 kilometers (about 18 minutes drive) from the beach at Hiriketiya.",
+        },
+        {
+          q: "Can we book a return transfer from Hiriketiya to Colombo Airport?",
+          a: "Yes, Edgeway chauffeurs provide 24/7 return transfers with guaranteed on-time airport drop-offs.",
+        },
+      ],
+    },
+  },
+  {
+    slug: "south-coast-sri-lanka-private-driver-day-trips",
+    title: "South Coast Sri Lanka Day Trips with Driver (2027 Guide)",
+    metaTitle: "Top 5 South Coast Sri Lanka Day Trips with Private Driver (2027)",
+    metaDescription:
+      "Best day trips from Galle, Mirissa & Weligama with a private chauffeur: Udawalawe elephant safari, Sinharaja rainforest, Madu River & Galle Fort.",
+    category: "itinerary",
+    categoryLabel: "Day Trips & Tours",
+    image: "/images/pkg-adventure.jpg",
+    date: "November 2026",
+    readTime: "8 min read",
+    author: "Malik Fernando",
+    authorRole: "Senior Chauffeur Guide",
+    featured: false,
+    content: {
+      intro:
+        "While relaxing on golden palm-fringed beaches is the main draw of southern Sri Lanka, taking south coast sri lanka day trips with driver allows you to experience wild elephant herds, virgin UNESCO rainforests, ancient Dutch fortifications, and cinnamon plantations—all while returning to your beachfront resort in time for sunset dinner. Hiring a dedicated private chauffeur eliminates navigation stress, protects you from taxi scams, and lets you travel on your own schedule.",
+      sections: [
+        {
+          heading: "1. Day Trip 1: Udawalawe National Park Elephant Safari",
+          body: "Located just 2 to 2.5 hours inland from Mirissa or Tangalle, Udawalawe is Sri Lanka's premier destination for guaranteed wild elephant sightings:",
+          list: [
+            "Itinerary: Depart hotel at 5:30 AM in an air-conditioned car, arrive for a morning 4x4 open-top jeep safari, visit the Elephant Transit Home (ETH) milk-feeding session at 10:30 AM, and return by 2:30 PM.",
+            "Highlight: Encountering wild herds with newborn calves in open savannah landscapes resembling Kenya.",
+          ],
+        },
+        {
+          heading: "2. Day Trip 2: Sinharaja UNESCO Biosphere Rainforest Trek",
+          body: "A 2-hour drive north from Galle takes you to Sinharaja, Sri Lanka's last viable primary tropical rainforest, harboring over 50% of the island's endemic flora, fauna, butterflies, and purple-faced langur monkeys.",
+          list: [
+            "Guided Walk: A certified tracker guides you along mossy trails to hidden jungle waterfalls for a cool swim.",
+          ],
+        },
+        {
+          heading: "3. Day Trip 3: Madu Ganga Mangrove River Safari & Kosgoda Turtles",
+          body: "Perfect for families staying in Bentota or Galle, this 5-hour excursion combines river ecology and wildlife conservation:",
+          list: [
+            "Madu River Boat Tour: Cruise through 64 mangrove islands, visit cinnamon peeling cottages, and experience natural fish therapy spas.",
+            "Kosgoda Sea Turtle Hatchery: Learn about marine turtle rescue and watch newborn green sea turtle hatchlings.",
+          ],
+        },
+        {
+          heading: "4. Day Trip 4: Handunugoda Virgin White Tea Estate & Stilt Fishermen",
+          body: "Situated just 20 minutes inland from Koggala beach, Handunugoda is famous worldwide for producing 'Virgin White Tea'—harvested without human skin touch following ancient Chinese imperial rituals.",
+          list: [
+            "Complimentary tea tasting of 20+ estate tea varieties followed by an iconic stilt fishermen photo stop along the Koggala shoreline.",
+          ],
+        },
+        {
+          heading: "5. Daily Private Driver Hire Rates on the South Coast",
+          body: "Hiring a private car with driver for full-day touring along the South Coast costs between $60 and $75 USD per day total for a private AC car, or $85 to $100 USD for a luxury Toyota KDH van. Fuel, driver allowance, and parking are 100% included with zero forced commercial stops.",
+        },
+      ],
+      faq: [
+        {
+          q: "Can a private driver pick us up from our villa in Mirissa for an Udawalawe safari?",
+          a: "Yes! Your Edgeway chauffeur picks you up right at your villa entrance and coordinates your private open-top 4x4 safari jeep and park entrance tickets in advance.",
+        },
+        {
+          q: "What should we pack for South Coast day trips?",
+          a: "Bring sunscreen, swimwear for waterfall dips, lightweight walking shoes, and a light jacket for air-conditioned vehicle transfers.",
+        },
+        {
+          q: "Is tipping our private driver expected?",
+          a: "While tipping is discretionary in Sri Lanka, a tip of $10 to $15 USD per day (3,000 to 5,000 LKR) for exceptional chauffeur service and safe driving is customary and deeply appreciated.",
+        },
+      ],
+    },
+  },
 ];
