@@ -40,12 +40,12 @@ export async function generateMetadata({
 
   if (!tour) {
     return {
-      title: "Tour Not Found | EDGEWAYTOURS",
+      title: "Tour Not Found | Edgeway Holidays and Tours",
     };
   }
 
   return {
-    title: `${tour.title} | Edgeway Tours Sri Lanka`,
+    title: `${tour.title} | Edgeway Holidays and Tours`,
     description: tour.shortDescription,
     openGraph: {
       title: `${tour.title} - Sri Lanka Tour`,
@@ -82,7 +82,7 @@ export default async function TourDetailPage({
     },
     provider: {
       "@type": "TravelAgency",
-      name: "Edgeway Tours",
+      name: "Edgeway Holidays and Tours",
       url: "https://edgewayholidays.com",
     },
   };
@@ -262,7 +262,7 @@ export default async function TourDetailPage({
                   {/* Fast Booking CTA */}
                   <div className="mt-5 space-y-3">
                     <a
-                      href={`https://wa.me/${siteConfig.whatsappNumber}?text=Hello%20Edgeway%20Tours,%20I%20would%20like%20to%20book%20the%20${encodeURIComponent(
+                      href={`https://wa.me/${siteConfig.whatsappNumber}?text=Hello%20Edgeway%20Holidays%20and%20Tours,%20I%20would%20like%20to%20book%20the%20${encodeURIComponent(
                         tour.title
                       )}`}
                       target="_blank"
@@ -330,7 +330,7 @@ export default async function TourDetailPage({
             <span className="text-[10px] text-slate-500 ml-1">/ person</span>
           </div>
           <a
-            href={`https://wa.me/${siteConfig.whatsappNumber}?text=Hello%20Edgeway%20Tours,%20I%20would%20like%20to%20book%20the%20${encodeURIComponent(
+            href={`https://wa.me/${siteConfig.whatsappNumber}?text=Hello%20Edgeway%20Holidays%20and%20Tours,%20I%20would%20like%20to%20book%20the%20${encodeURIComponent(
               tour.title
             )}`}
             target="_blank"

@@ -29,7 +29,7 @@ const caveat = Caveat({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://edgewayholidays.com"),
-  title: "EDGEWAYTOURS | Explore Sri Lanka Differently",
+  title: "EDGEWAY HOLIDAYS & TOURS | Explore Sri Lanka Differently",
   description:
     "Authentic Sri Lanka tours and holiday experiences crafted by locals who love their island. Discover safaris, ancient kingdoms, beaches, and scenic railways.",
   verification: {
@@ -45,8 +45,8 @@ export default function RootLayout({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "TravelAgency",
-    "name": "Edgeway Tours",
-    "alternateName": "Edgeway Holidays",
+    "name": "Edgeway Holidays and Tours",
+    "alternateName": "Edgeway Holidays and Tours",
     "url": "https://edgewayholidays.com",
     "logo": "https://edgewayholidays.com/images/hero-sigiriya.jpg",
     "image": "https://edgewayholidays.com/images/hero-sigiriya.jpg",

@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Handpicked Sri Lanka Tours & Holiday Packages | Edgeway Tours",
+  title: "Handpicked Sri Lanka Tours & Holiday Packages | Edgeway Holidays and Tours",
   description:
     "Explore handpicked Sri Lanka day tours, multi-day holiday packages, wildlife safaris, and scenic train journeys with private tourist chauffeurs.",
   openGraph: {
-    title: "Handpicked Sri Lanka Tours & Holiday Packages | Edgeway Tours",
+    title: "Handpicked Sri Lanka Tours & Holiday Packages | Edgeway Holidays and Tours",
     description:
       "Explore handpicked Sri Lanka day tours, multi-day holiday packages, wildlife safaris, and scenic train journeys with private tourist chauffeurs.",
   },

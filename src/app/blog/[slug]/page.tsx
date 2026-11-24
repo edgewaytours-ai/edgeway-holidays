@@ -34,12 +34,12 @@ export async function generateMetadata({
 
   if (!post) {
     return {
-      title: "Article Not Found | Edgeway Tours",
+      title: "Article Not Found | Edgeway Holidays and Tours",
     };
   }
 
   return {
-    title: `${post.metaTitle} | Edgeway Tours Sri Lanka`,
+    title: `${post.metaTitle} | Edgeway Holidays and Tours`,
     description: post.metaDescription,
     openGraph: {
       title: post.metaTitle,
@@ -214,7 +214,7 @@ export default async function BlogPostPage({
               </p>
             </div>
             <a
-              href={`https://wa.me/${siteConfig.whatsappNumber}?text=Hello%20Edgeway%20Tours,%20I%20am%20reading%20your%20guide%20(${encodeURIComponent(
+              href={`https://wa.me/${siteConfig.whatsappNumber}?text=Hello%20Edgeway%20Holidays%20and%20Tours,%20I%20am%20reading%20your%20guide%20(${encodeURIComponent(
                 post.title
               )})%20and%20would%20like%20to%20plan%20a%20private%20tour.`}
               target="_blank"
@@ -294,7 +294,7 @@ export default async function BlogPostPage({
                 <ArrowRight className="w-4 h-4" />
               </Link>
               <a
-                href={`https://wa.me/${siteConfig.whatsappNumber}?text=Hi%20Edgeway%20Tours,%20I'd%20like%20to%20ask%20a%20few%20questions%20about%20traveling%20in%20Sri%20Lanka.`}
+                href={`https://wa.me/${siteConfig.whatsappNumber}?text=Hi%20Edgeway%20Holidays%20and%20Tours,%20I'd%20like%20to%20ask%20a%20few%20questions%20about%20traveling%20in%20Sri%20Lanka.`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-[#25D366] text-white font-bold text-xs sm:text-sm hover:bg-[#20bd5a] transition-colors"

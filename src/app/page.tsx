@@ -31,7 +31,7 @@ export default function Home() {
         {/* 6. Multi-Day Packages (Complete Sri Lanka Holidays) */}
         <MultiDayPackages />
 
-        {/* 7. Top Destinations & Why Travel with EdgewayTours */}
+        {/* 7. Top Destinations & Why Travel with Edgeway Holidays and Tours */}
         <DestinationsAndWhyUs />
 
         {/* 8. Traveller Testimonials & Plan Your Adventure CTA */}

@@ -73,7 +73,7 @@ export default function AboutPage() {
                 <span className="text-amber-400">We Help You Feel It.</span>
               </h1>
               <p className="mt-4 text-base sm:text-lg text-emerald-100/90 leading-relaxed">
-                EdgewayTours was founded on a simple promise: to share the raw beauty, deep ancient culture, and heartfelt hospitality of Sri Lanka through the eyes of the people who call this paradise home.
+                Edgeway Holidays and Tours was founded on a simple promise: to share the raw beauty, deep ancient culture, and heartfelt hospitality of Sri Lanka through the eyes of the people who call this paradise home.
               </p>
             </div>
           </div>
@@ -114,7 +114,7 @@ export default function AboutPage() {
                     For years, mass tourism in Sri Lanka followed a frustrating pattern: large impersonal tour coaches, rushed 15-minute photo stops, and endless detours into overpriced souvenir shops.
                   </p>
                   <p>
-                    We built <strong>EdgewayTours</strong> to offer the exact opposite. When you travel with us, you are paired with a dedicated, licensed English-speaking chauffeur-guide in a comfortable private air-conditioned vehicle. You travel at your own pace, stop whenever you spot a wild peacock or a roadside king coconut vendor, and savor genuine local meals cooked over firewood in rural village homes.
+                    We built <strong>Edgeway Holidays and Tours</strong> to offer the exact opposite. When you travel with us, you are paired with a dedicated, licensed English-speaking chauffeur-guide in a comfortable private air-conditioned vehicle. You travel at your own pace, stop whenever you spot a wild peacock or a roadside king coconut vendor, and savor genuine local meals cooked over firewood in rural village homes.
                   </p>
                   <p>
                     Whether it&apos;s securing prime morning seats on the iconic blue train through the tea hills, tracking leopards in secluded corners of Yala, or catching sunset point breaks in Arugam Bay, we tailor every moment around what inspires you.
@@ -143,14 +143,14 @@ export default function AboutPage() {
                 <div className="relative h-96 sm:h-[460px] rounded-3xl overflow-hidden shadow-2xl">
                   <Image
                     src="/images/hero-sigiriya.jpg"
-                    alt="Travelers viewing Sigiriya with EdgewayTours"
+                    alt="Travelers viewing Sigiriya with Edgeway Holidays and Tours"
                     fill
                     className="object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                   <div className="absolute bottom-6 left-6 right-6 text-white bg-black/40 backdrop-blur-md p-4 rounded-2xl border border-white/20">
                     <p className="text-xs italic">
-                      &ldquo;EdgewayTours turned our Sri Lankan journey from a standard holiday into the most meaningful adventure of our lives.&rdquo;
+                      &ldquo;Edgeway Holidays and Tours turned our Sri Lankan journey from a standard holiday into the most meaningful adventure of our lives.&rdquo;
                     </p>
                     <span className="block text-[11px] font-bold text-amber-300 mt-2">
                       — Sophie & David (Melbourne, Australia)
@@ -275,7 +275,7 @@ export default function AboutPage() {
                   </div>
                 </div>
                 <p className="text-xs text-emerald-100/80 leading-relaxed">
-                  Every driver-guide affiliated with EdgewayTours holds valid government tourist chauffeur licenses, comprehensive commercial passenger insurance, and verified background checks.
+                  Every driver-guide affiliated with Edgeway Holidays and Tours holds valid government tourist chauffeur licenses, comprehensive commercial passenger insurance, and verified background checks.
                 </p>
                 <div className="mt-5 pt-4 border-t border-emerald-800/60 flex items-center justify-between text-xs">
                   <span className="text-emerald-300">24/7 Island Support Hotline:</span>

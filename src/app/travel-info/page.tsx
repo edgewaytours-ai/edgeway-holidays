@@ -31,11 +31,11 @@ const faqs: FAQItem[] = [
     category: "safety",
     question: "Is Sri Lanka safe for international tourists and families?",
     answer:
-      "Yes, absolutely. Sri Lanka is consistently ranked among the safest and most hospitable travel destinations globally. Violent crime against tourists is extremely rare. Locals are world-renowned for their warmth, friendliness, and respect for guests. With a dedicated EdgewayTours private chauffeur-guide, you have a trusted local companion with you at all times.",
+      "Yes, absolutely. Sri Lanka is consistently ranked among the safest and most hospitable travel destinations globally. Violent crime against tourists is extremely rare. Locals are world-renowned for their warmth, friendliness, and respect for guests. With a dedicated Edgeway Holidays and Tours private chauffeur-guide, you have a trusted local companion with you at all times.",
   },
   {
     category: "booking",
-    question: "What is included in an EdgewayTours private itinerary?",
+    question: "What is included in an Edgeway Holidays and Tours private itinerary?",
     answer:
       "Our standard private packages include: private air-conditioned vehicle (car, SUV, or micro-van based on group size), licensed English-speaking tourist driver-guide, fuel, highway tolls, parking charges, driver's accommodation & meals, hotel accommodations with daily breakfast, reserved scenic train tickets, and all specified safari jeep excursions. International flights and personal lunches/dinners are typically excluded unless requested.",
   },
@@ -43,7 +43,7 @@ const faqs: FAQItem[] = [
     category: "logistics",
     question: "How do we get tickets for the famous Kandy to Ella train?",
     answer:
-      "Sri Lanka Railways releases reserved train seats 30 days in advance, and tickets frequently sell out within minutes. When you book a multi-day tour package with EdgewayTours, our team reserves and secures your 1st class or 2nd class reserved seats in advance on your behalf. Your private driver transports your heavy luggage by road, meeting you on the platform at Ella station when you disembark!",
+      "Sri Lanka Railways releases reserved train seats 30 days in advance, and tickets frequently sell out within minutes. When you book a multi-day tour package with Edgeway Holidays and Tours, our team reserves and secures your 1st class or 2nd class reserved seats in advance on your behalf. Your private driver transports your heavy luggage by road, meeting you on the platform at Ella station when you disembark!",
   },
   {
     category: "food",
@@ -256,7 +256,7 @@ export default function TravelInfoPage() {
                     Sri Lankan trains have tight aisles and minimal luggage storage. Hauling heavy suitcases onto crowded carriages can be stressful.
                   </p>
                   <p className="p-3 bg-emerald-50 rounded-xl text-[#0A3B32] font-medium border border-emerald-100">
-                    With an EdgewayTours private tour, your private chauffeur takes your suitcases securely in the car while you enjoy the scenic 3.5 to 5-hour train journey with just a small daypack. Your driver greets you right on the platform when you pull into Ella station!
+                    With an Edgeway Holidays and Tours private tour, your private chauffeur takes your suitcases securely in the car while you enjoy the scenic 3.5 to 5-hour train journey with just a small daypack. Your driver greets you right on the platform when you pull into Ella station!
                   </p>
                 </div>
               </div>

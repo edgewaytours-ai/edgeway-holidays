@@ -123,7 +123,7 @@ export default function DestinationsAndWhyUs() {
             </div>
           </div>
 
-          {/* Right Column: Why Travel With EdgewayTours (5 cols) */}
+          {/* Right Column: Why Travel With Edgeway Holidays and Tours (5 cols) */}
           <div
             id="why-us"
             className="lg:col-span-5 bg-white rounded-2xl p-5 border border-slate-100 shadow-xs relative overflow-hidden flex flex-col justify-between"
@@ -135,7 +135,7 @@ export default function DestinationsAndWhyUs() {
 
             <div>
               <span className="text-[10px] font-bold text-slate-500 tracking-[0.2em] uppercase block mb-4">
-                Why Travel With EdgewayTours
+                Why Travel With Edgeway Holidays and Tours
               </span>
 
               {/* 4 Pillars In One Row with Large Circle Outline Icons */}

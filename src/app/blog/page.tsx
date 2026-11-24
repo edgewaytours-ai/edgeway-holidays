@@ -150,7 +150,7 @@ const blogPosts: BlogPost[] = [
     image: "/images/hero-sigiriya.jpg",
     date: "November 2026",
     readTime: "9 min read",
-    author: "Edgeway Tours Specialist",
+    author: "Edgeway Holidays and Tours Specialist",
     featured: false,
   },
   {
@@ -473,7 +473,7 @@ export default function BlogPage() {
             <form
               onSubmit={(e) => {
                 e.preventDefault();
-                alert("Thank you for subscribing to EdgewayTours travel stories!");
+                alert("Thank you for subscribing to Edgeway Holidays and Tours travel stories!");
               }}
               className="mt-6 flex flex-col sm:flex-row gap-2 max-w-md mx-auto"
             >

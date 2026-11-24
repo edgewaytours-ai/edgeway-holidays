@@ -435,7 +435,7 @@ export default function DestinationsPage() {
           </div>
         </section>
 
-        {/* Why Explore with EdgewayTours Banner */}
+        {/* Why Explore with Edgeway Holidays and Tours Banner */}
         <section className="bg-white py-14 border-t border-slate-200/80">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

@@ -37,8 +37,8 @@ export async function POST(req: Request) {
     const welcomeHtml = `
       <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; max-width: 600px; margin: 0 auto; background-color: #ffffff; border-radius: 16px; overflow: hidden; border: 1px solid #e2e8f0;">
         <div style="background-color: #063D34; padding: 32px 24px; text-align: center;">
-          <h1 style="color: #ffffff; font-size: 24px; margin: 0; font-weight: 800; letter-spacing: -0.5px;">
-            EDGEWAY<span style="color: #10B981;">TOURS</span>
+          <h1 style="color: #ffffff; font-size: 22px; margin: 0; font-weight: 800; letter-spacing: -0.5px;">
+            EDGEWAY<span style="color: #10B981;"> HOLIDAYS & TOURS</span>
           </h1>
           <p style="color: #a7f3d0; font-size: 13px; margin: 6px 0 0; text-transform: uppercase; letter-spacing: 2px;">
             Explore Sri Lanka Differently
@@ -50,7 +50,7 @@ export async function POST(req: Request) {
             Ayubowan & Welcome to Our Travel Circle! 🌴
           </h2>
           <p>
-            Thank you for subscribing to Edgeway Tours! You are now on the insider list to receive our latest seasonal Sri Lanka travel guides, hidden beach spots, wildlife migration alerts, and private chauffeur route advice.
+            Thank you for subscribing to Edgeway Holidays and Tours! You are now on the insider list to receive our latest seasonal Sri Lanka travel guides, hidden beach spots, wildlife migration alerts, and private chauffeur route advice.
           </p>
           
           <div style="background-color: #f8fafc; border-left: 4px solid #10B981; padding: 16px; border-radius: 8px; margin: 24px 0;">
@@ -61,7 +61,7 @@ export async function POST(req: Request) {
           </div>
 
           <div style="text-align: center; margin: 32px 0;">
-            <a href="https://wa.me/${siteConfig.whatsappNumber}?text=Hello%20Edgeway%20Tours!%20I%20just%20subscribed%20to%20your%20newsletter%20and%20would%20love%20some%20trip%20advice." 
+            <a href="https://wa.me/${siteConfig.whatsappNumber}?text=Hello%20Edgeway%20Holidays%20and%20Tours!%20I%20just%20subscribed%20to%20your%20newsletter%20and%20would%20love%20some%20trip%20advice." 
                style="background-color: #25D366; color: #ffffff; text-decoration: none; padding: 14px 28px; border-radius: 9999px; font-weight: bold; font-size: 14px; display: inline-block;">
               Chat with Our Tour Designer on WhatsApp
             </a>
@@ -69,7 +69,7 @@ export async function POST(req: Request) {
 
           <p style="font-size: 13px; color: #64748b; margin-top: 32px; border-top: 1px solid #f1f5f9; padding-top: 16px;">
             Warm regards,<br />
-            <strong>The Edgeway Holidays Team</strong><br />
+            <strong>The Edgeway Holidays and Tours Team</strong><br />
             Colombo, Sri Lanka · <a href="${siteConfig.url}" style="color: #063D34;">edgewayholidays.com</a>
           </p>
         </div>
@@ -88,9 +88,9 @@ export async function POST(req: Request) {
 
     // Send subscriber confirmation
     await transporter.sendMail({
-      from: `"Edgeway Tours" <${user}>`,
+      from: `"Edgeway Holidays and Tours" <${user}>`,
       to: email,
-      subject: "Welcome to Edgeway Tours — Your Sri Lanka Travel Inspiration 🌴",
+      subject: "Welcome to Edgeway Holidays and Tours — Your Sri Lanka Travel Inspiration 🌴",
       html: welcomeHtml,
     });
 

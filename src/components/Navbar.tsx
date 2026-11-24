@@ -43,10 +43,10 @@ export default function Navbar() {
               </svg>
             </div>
             <div className="flex flex-col">
-              <span className="text-xl font-extrabold tracking-tight text-[#0A3B32] leading-none">
-                EDGEWAY<span className="text-[#0D4B3F]">TOURS</span>
+              <span className="text-base sm:text-xl font-extrabold tracking-tight text-[#0A3B32] leading-none">
+                EDGEWAY<span className="text-[#0D4B3F]"> HOLIDAYS & TOURS</span>
               </span>
-              <span className="text-[9px] tracking-[0.26em] text-slate-500 font-bold uppercase mt-1">
+              <span className="text-[9px] tracking-[0.22em] text-slate-500 font-bold uppercase mt-1">
                 Explore Sri Lanka Differently
               </span>
             </div>

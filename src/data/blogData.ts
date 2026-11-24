@@ -121,7 +121,7 @@ export const blogPostsData: BlogPost[] = [
     "faq": [
       {
         "q": "What is the average fare for a taxi from Colombo Airport to Sigiriya?",
-        "a": "A one-way on-demand airport taxi costs between $75 and $95 USD. Booking a dedicated private driver through Edgeway Tours covers your entire day's sightseeing for less."
+        "a": "A one-way on-demand airport taxi costs between $75 and $95 USD. Booking a dedicated private driver through Edgeway Holidays and Tours covers your entire day's sightseeing for less."
       },
       {
         "q": "What happens if our flight lands at 2:00 AM?",
@@ -186,7 +186,7 @@ export const blogPostsData: BlogPost[] = [
       },
       {
         "q": "What happens if a rental vehicle breaks down?",
-        "a": "Self-drive rental agencies often take 6 to 12 hours to send assistance to remote hill regions. With Edgeway Tours, our island-wide support network guarantees immediate replacement vehicles."
+        "a": "Self-drive rental agencies often take 6 to 12 hours to send assistance to remote hill regions. With Edgeway Holidays and Tours, our island-wide support network guarantees immediate replacement vehicles."
       }
     ]
   }
@@ -229,7 +229,7 @@ export const blogPostsData: BlogPost[] = [
           heading: "Mistake 3: Not Clarifying Where the Driver Sleeps",
           body: "While established 3-star, 4-star, and luxury resorts offer free driver quarters, secluded Airbnb villas and homestays do not. If driver accommodation is not included, unverified drivers will demand $15 to $25 cash per night from you.",
           list: [
-            "Edgeway Tours builds driver accommodation allowance into every quote so you never pay extra.",
+            "Edgeway Holidays and Tours builds driver accommodation allowance into every quote so you never pay extra.",
           ],
         },
         {
@@ -242,7 +242,7 @@ export const blogPostsData: BlogPost[] = [
         },
         {
           heading: "Mistake 6: Paying 100% Upfront Before Meeting Your Driver",
-          body: "Never wire full payment in advance to unverified individuals. Edgeway Tours operates on a 15% deposit guarantee—you lock in your dates with just 15%, and pay the remaining balance in cash after arriving in Sri Lanka.",
+          body: "Never wire full payment in advance to unverified individuals. Edgeway Holidays and Tours operates on a 15% deposit guarantee—you lock in your dates with just 15%, and pay the remaining balance in cash after arriving in Sri Lanka.",
         },
         {
           heading: "Mistake 7: Creating an Unrealistic Rushed Schedule",
@@ -256,7 +256,7 @@ export const blogPostsData: BlogPost[] = [
         },
         {
           q: "Can my driver help buy train tickets for Kandy to Ella?",
-          a: "Yes! Edgeway Tours assists guests in securing reserved 1st and 2nd class train seats 30 days before travel, while your driver safely transfers your heavy luggage ahead to your Ella hotel.",
+          a: "Yes! Edgeway Holidays and Tours assists guests in securing reserved 1st and 2nd class train seats 30 days before travel, while your driver safely transfers your heavy luggage ahead to your Ella hotel.",
         },
         {
           q: "Do we have to pay for the driver's meals?",
@@ -276,7 +276,7 @@ export const blogPostsData: BlogPost[] = [
     image: "/images/hero-sigiriya.jpg",
     date: "November 2026",
     readTime: "9 min read",
-    author: "Edgeway Tours Specialist",
+    author: "Edgeway Holidays and Tours Specialist",
     authorRole: "Head of Itinerary Design",
     featured: true,
     content: {
@@ -328,7 +328,7 @@ export const blogPostsData: BlogPost[] = [
         },
         {
           q: "Can this 10-day itinerary be customized?",
-          a: "Yes! Edgeway Tours tailors every itinerary to your exact flight times, preferred pace, and hotel choices.",
+          a: "Yes! Edgeway Holidays and Tours tailors every itinerary to your exact flight times, preferred pace, and hotel choices.",
         },
       ],
     },
@@ -362,7 +362,7 @@ export const blogPostsData: BlogPost[] = [
         },
         {
           heading: "What Is Included in an All-Inclusive Rate?",
-          body: "When booking with a reputable tour operator like Edgeway Tours, your daily quote includes:",
+          body: "When booking with a reputable tour operator like Edgeway Holidays and Tours, your daily quote includes:",
           list: [
             "Comfortable air-conditioned private vehicle dedicated exclusively to your group",
             "Unlimited fuel for the agreed itinerary",
@@ -379,7 +379,7 @@ export const blogPostsData: BlogPost[] = [
       faq: [
         {
           q: "Do I have to book a hotel room for the driver?",
-          a: "No! Most quality 3-star, 4-star, and boutique hotels in Sri Lanka provide free driver quarters. In cases where the hotel doesn't have driver quarters, the driver's accommodation allowance is already included in your Edgeway Tours package.",
+          a: "No! Most quality 3-star, 4-star, and boutique hotels in Sri Lanka provide free driver quarters. In cases where the hotel doesn't have driver quarters, the driver's accommodation allowance is already included in your Edgeway Holidays and Tours package.",
         },
         {
           q: "How can I book a verified driver for 2027?",
@@ -417,7 +417,7 @@ export const blogPostsData: BlogPost[] = [
         },
         {
           heading: "The Luggage Dilemma: Solved with a Private Driver",
-          body: "Sri Lankan train carriages have very limited luggage storage space, and carrying large suitcases onto crowded trains can be stressful. When you travel with Edgeway Tours, you can board the train with just a camera daypack while your private driver transports all heavy luggage ahead directly to your Ella hotel.",
+          body: "Sri Lankan train carriages have very limited luggage storage space, and carrying large suitcases onto crowded trains can be stressful. When you travel with Edgeway Holidays and Tours, you can board the train with just a camera daypack while your private driver transports all heavy luggage ahead directly to your Ella hotel.",
         },
         {
           heading: "Best Side to Sit on the Train",
@@ -427,7 +427,7 @@ export const blogPostsData: BlogPost[] = [
       faq: [
         {
           q: "How far in advance do train tickets open?",
-          a: "Reserved Sri Lanka Railway tickets open exactly 30 days prior to the travel date and often sell out within hours. Edgeway Tours can arrange reserved seat bookings for our guests in advance.",
+          a: "Reserved Sri Lanka Railway tickets open exactly 30 days prior to the travel date and often sell out within hours. Edgeway Holidays and Tours can arrange reserved seat bookings for our guests in advance.",
         },
       ],
     },
@@ -719,7 +719,7 @@ export const blogPostsData: BlogPost[] = [
       faq: [
         {
           q: "Is Sri Lankan food very spicy?",
-          a: "Traditional food has plenty of chili kick, but when booking with Edgeway Tours or dining in restaurants, you can always request 'mild spice' or 'tourist spice'.",
+          a: "Traditional food has plenty of chili kick, but when booking with Edgeway Holidays and Tours or dining in restaurants, you can always request 'mild spice' or 'tourist spice'.",
         },
         {
           q: "Is Sri Lanka friendly for vegetarians and vegans?",
@@ -769,7 +769,7 @@ export const blogPostsData: BlogPost[] = [
           heading: "3. Warning: Avoid Arrival Hall Touts & $45 Cheap Quotes",
           body: "Landing after a long flight exposes travelers to unverified freelance drivers offering unrealistically cheap quotes ($45 to $55 USD). Fuel and expressway tolls alone exceed $35 for this route. Drivers operating at these cut-rate prices make their profit by forcing tired passengers into commercial commission stops (spice gardens, gem mines, overpriced tourist restaurants) where they collect up to 40% kickbacks.",
           list: [
-            "Edgeway Tours Guarantees 0% Forced Shopping Stops: Your chauffeur drives you straight to your Mirissa resort with zero commercial detours.",
+            "Edgeway Holidays and Tours Guarantees 0% Forced Shopping Stops: Your chauffeur drives you straight to your Mirissa resort with zero commercial detours.",
             "15% Flexible Deposit Guarantee: Reserve your transfer with just 15% deposit online, and pay the remaining balance in cash after arriving safely at your hotel.",
           ],
         },
@@ -785,7 +785,7 @@ export const blogPostsData: BlogPost[] = [
         },
         {
           q: "Are expressway toll fees included in the fare?",
-          a: "Yes! All Southern Expressway and Airport Expressway toll gate receipts are 100% included in every Edgeway Tours transfer quote.",
+          a: "Yes! All Southern Expressway and Airport Expressway toll gate receipts are 100% included in every Edgeway Holidays and Tours transfer quote.",
         },
         {
           q: "Can we stop for an ATM, SIM card, or coffee along the expressway?",
@@ -834,11 +834,11 @@ export const blogPostsData: BlogPost[] = [
         },
         {
           heading: "3. Traveling Between South Coast Towns with a Private Driver",
-          body: "While coastal trains are scenic, they only run a few times a day and stop only at main stations. Local tuk-tuks get noisy, hot, and tiring for journeys over 20 minutes. Hiring a dedicated private chauffeur from Edgeway Tours costs just $55 to $75 USD per day, giving you an air-conditioned car 24/7 to hop effortlessly between morning surf in Weligama, sunset dinner in Galle Fort, and late cocktails in Mirissa.",
+          body: "While coastal trains are scenic, they only run a few times a day and stop only at main stations. Local tuk-tuks get noisy, hot, and tiring for journeys over 20 minutes. Hiring a dedicated private chauffeur from Edgeway Holidays and Tours costs just $55 to $75 USD per day, giving you an air-conditioned car 24/7 to hop effortlessly between morning surf in Weligama, sunset dinner in Galle Fort, and late cocktails in Mirissa.",
         },
         {
           heading: "4. Warning: Avoiding High-Commission Shopping Traps on the Coast",
-          body: "Roadside drivers in beach towns frequently push tourists toward 'famous moonstone mines' or 'Ayurvedic spice gardens' in Meetiyagoda and Koggala where prices are inflated 500% to pay driver kickbacks. Edgeway Tours operates on a strict 0% forced commission policy—your itinerary is 100% focused on authentic coastal culture and scenery.",
+          body: "Roadside drivers in beach towns frequently push tourists toward 'famous moonstone mines' or 'Ayurvedic spice gardens' in Meetiyagoda and Koggala where prices are inflated 500% to pay driver kickbacks. Edgeway Holidays and Tours operates on a strict 0% forced commission policy—your itinerary is 100% focused on authentic coastal culture and scenery.",
         },
       ],
       faq: [
@@ -890,7 +890,7 @@ export const blogPostsData: BlogPost[] = [
         },
         {
           heading: "3. Pre-Booked Chauffeur vs Hailing a Taxi at Airport Counters",
-          body: "While official airport taxi counters exist inside the CMB arrival lounge, rates are often variable ($85 to $110 USD for compact hatchbacks with rooftop luggage straps). When you pre-book with Edgeway Tours:",
+          body: "While official airport taxi counters exist inside the CMB arrival lounge, rates are often variable ($85 to $110 USD for compact hatchbacks with rooftop luggage straps). When you pre-book with Edgeway Holidays and Tours:",
           list: [
             "Your chauffeur greets you inside the air-conditioned arrival lounge with a personalized name card.",
             "Complimentary flight radar monitoring ensures your driver is waiting even if your flight is delayed.",
@@ -910,7 +910,7 @@ export const blogPostsData: BlogPost[] = [
         },
         {
           q: "Do we have to pay extra if our flight lands past midnight?",
-          a: "No! Edgeway Tours operates 24/7 airport pickups with zero night surcharges.",
+          a: "No! Edgeway Holidays and Tours operates 24/7 airport pickups with zero night surcharges.",
         },
       ],
     },

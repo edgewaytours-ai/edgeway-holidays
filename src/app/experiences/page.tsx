@@ -218,7 +218,7 @@ export default function ExperiencesPage() {
                 Signature Sri Lankan <span className="text-amber-400">Experiences</span>
               </h1>
               <p className="mt-4 text-base sm:text-lg text-emerald-100/90 leading-relaxed">
-                Whether you dream of close encounters with wild leopards, paddling world-class waves, tasting hot clay-pot curries in a rural village, or scaling 1,500-year-old rock fortresses, every journey with EdgewayTours is thoughtfully curated.
+                Whether you dream of close encounters with wild leopards, paddling world-class waves, tasting hot clay-pot curries in a rural village, or scaling 1,500-year-old rock fortresses, every journey with Edgeway Holidays and Tours is thoughtfully curated.
               </p>
             </div>
 

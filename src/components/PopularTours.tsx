@@ -408,7 +408,7 @@ export default function PopularTours() {
 
                       <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-3">
                         <a
-                          href={`https://wa.me/${siteConfig.whatsappNumber}?text=Hello%20EdgewayTours,%20I%20am%20inquiring%20about%20booking%20the%20${encodeURIComponent(
+                          href={`https://wa.me/${siteConfig.whatsappNumber}?text=Hello%20Edgeway%20Holidays%20and%20Tours,%20I%20am%20inquiring%20about%20booking%20the%20${encodeURIComponent(
                             activeModalTour.title
                           )}`}
                           target="_blank"

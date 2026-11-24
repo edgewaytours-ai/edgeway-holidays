@@ -51,10 +51,10 @@ export default function Footer() {
                 <Palmtree className="w-5 h-5" />
               </div>
               <div className="flex flex-col">
-                <span className="text-xl font-bold tracking-tight text-white leading-none">
-                  EDGEWAY<span className="text-emerald-400 font-extrabold">TOURS</span>
+                <span className="text-lg sm:text-xl font-bold tracking-tight text-white leading-none">
+                  EDGEWAY<span className="text-emerald-400 font-extrabold"> HOLIDAYS & TOURS</span>
                 </span>
-                <span className="text-[9px] tracking-[0.25em] text-slate-400 font-semibold uppercase mt-1">
+                <span className="text-[9px] tracking-[0.22em] text-slate-400 font-semibold uppercase mt-1">
                   Explore • Experience • Belong
                 </span>
               </div>
@@ -106,7 +106,7 @@ export default function Footer() {
                 href={`https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent(siteConfig.defaultWhatsAppMessage)}`}
                 target="_blank"
                 rel="noreferrer"
-                aria-label="Chat with Edgeway Tours on WhatsApp"
+                aria-label="Chat with Edgeway Holidays and Tours on WhatsApp"
                 className="w-8 h-8 rounded-full bg-white/5 hover:bg-[#25D366] hover:text-white flex items-center justify-center text-slate-300 transition-colors"
               >
                 <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
@@ -269,7 +269,7 @@ export default function Footer() {
         {/* Bottom Bar: Copyright & Handwritten Tagline */}
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-400 font-light">
           <div>
-            © 2027 EdgewayTours. All rights reserved.
+            © 2027 Edgeway Holidays and Tours. All rights reserved.
           </div>
 
           <div className="flex items-center gap-2 text-white/90">

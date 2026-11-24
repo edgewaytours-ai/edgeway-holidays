@@ -88,7 +88,7 @@ export default function Hero() {
     e.preventDefault();
     setActiveDropdown(null);
     const message = encodeURIComponent(
-      `Hello Edgeway Tours! I would like to book a private transfer from ${pickupLocation} to ${dropoffDestination} (${transferVehicle}). Date: ${transferDate}. Please confirm quote and driver availability.`
+      `Hello Edgeway Holidays and Tours! I would like to book a private transfer from ${pickupLocation} to ${dropoffDestination} (${transferVehicle}). Date: ${transferDate}. Please confirm quote and driver availability.`
     );
     window.open(`https://wa.me/${siteConfig.whatsappNumber}?text=${message}`, "_blank");
   };
