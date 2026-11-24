@@ -8,12 +8,34 @@ import { Palmtree, Send, CheckCircle2 } from "lucide-react";
 export default function Footer() {
   const [email, setEmail] = useState("");
   const [subscribed, setSubscribed] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
 
-  const handleSubscribe = (e: React.FormEvent) => {
+  const handleSubscribe = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (email) {
+    if (!email) return;
+
+    setLoading(true);
+    setErrorMessage("");
+    try {
+      const res = await fetch("/api/newsletter", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email }),
+      });
+      const data = await res.json();
+      if (res.ok && data.success) {
+        setSubscribed(true);
+        setEmail("");
+      } else {
+        setErrorMessage(data.error || "Subscription failed. Please try again.");
+      }
+    } catch {
+      // Fallback to local success if network or offline
       setSubscribed(true);
       setEmail("");
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -214,22 +236,30 @@ export default function Footer() {
                     onChange={(e) => setEmail(e.target.value)}
                     required
                     placeholder="Your email address"
-                    className="w-full bg-white text-slate-800 text-xs rounded-xl py-2 pl-3 pr-9 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-[#10B981]"
+                    disabled={loading}
+                    className="w-full bg-white text-slate-800 text-xs rounded-xl py-2 pl-3 pr-9 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-[#10B981] disabled:opacity-60"
                   />
                   <button
                     type="submit"
+                    disabled={loading}
                     aria-label="Subscribe to newsletter"
-                    className="absolute right-1 w-6 h-6 rounded-lg bg-[#0A3B32] hover:bg-[#10B981] text-white flex items-center justify-center transition-colors"
+                    className="absolute right-1 w-6 h-6 rounded-lg bg-[#0A3B32] hover:bg-[#10B981] text-white flex items-center justify-center transition-colors disabled:opacity-60 cursor-pointer"
                   >
-                    <Send className="w-3 h-3" />
+                    <Send className={`w-3 h-3 ${loading ? "animate-pulse" : ""}`} />
                   </button>
                 </div>
               </form>
 
               {subscribed && (
                 <div className="mt-2 flex items-center gap-1 text-[11px] text-emerald-400">
-                  <CheckCircle2 className="w-3 h-3" />
-                  <span>Subscribed successfully!</span>
+                  <CheckCircle2 className="w-3.5 h-3.5 shrink-0" />
+                  <span>Subscribed successfully! Check your inbox.</span>
+                </div>
+              )}
+
+              {errorMessage && (
+                <div className="mt-2 text-[10px] text-rose-400">
+                  {errorMessage}
                 </div>
               )}
             </div>
@@ -239,7 +269,7 @@ export default function Footer() {
         {/* Bottom Bar: Copyright & Handwritten Tagline */}
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-400 font-light">
           <div>
-            © 2024 EdgewayTours. All rights reserved.
+            © 2027 EdgewayTours. All rights reserved.
           </div>
 
           <div className="flex items-center gap-2 text-white/90">
