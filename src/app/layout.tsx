@@ -48,7 +48,7 @@ export default function RootLayout({
     "name": "Edgeway Holidays and Tours",
     "alternateName": "Edgeway Holidays and Tours",
     "url": "https://edgewayholidays.com",
-    "logo": "https://edgewayholidays.com/images/hero-sigiriya.jpg",
+    "logo": "https://edgewayholidays.com/logo.png",
     "image": "https://edgewayholidays.com/images/hero-sigiriya.jpg",
     "description":
       "Authentic Sri Lanka tours and holiday experiences crafted by locals. Private chauffeur guide tours, wildlife safaris, cultural journeys, and bespoke travel packages.",

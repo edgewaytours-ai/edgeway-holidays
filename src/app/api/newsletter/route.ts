@@ -1,5 +1,7 @@
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
+import fs from "node:fs";
+import path from "node:path";
 import { siteConfig } from "@/data/siteConfig";
 
 export async function POST(req: Request) {
@@ -33,10 +35,27 @@ export async function POST(req: Request) {
       },
     });
 
+    const logoPath = path.join(process.cwd(), "public", "logo.png");
+    const hasLocalLogo = fs.existsSync(logoPath);
+    const logoSrc = hasLocalLogo
+      ? "cid:edgeway-logo"
+      : `${siteConfig.url}/logo.png`;
+    const logoAttachment = hasLocalLogo
+      ? [
+          {
+            filename: "edgeway-logo.png",
+            content: fs.readFileSync(logoPath),
+            cid: "edgeway-logo",
+            contentDisposition: "inline" as const,
+          },
+        ]
+      : [];
+
     // 1. Send Welcome Email to the Subscriber
     const welcomeHtml = `
       <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; max-width: 600px; margin: 0 auto; background-color: #ffffff; border-radius: 16px; overflow: hidden; border: 1px solid #e2e8f0;">
         <div style="background-color: #063D34; padding: 32px 24px; text-align: center;">
+          <img src="${logoSrc}" alt="Edgeway Holidays and Tours" width="64" height="64" style="display: block; margin: 0 auto 14px; border-radius: 50%; border: 2px solid #10B981;" />
           <h1 style="color: #ffffff; font-size: 22px; margin: 0; font-weight: 800; letter-spacing: -0.5px;">
             EDGEWAY<span style="color: #10B981;"> HOLIDAYS & TOURS</span>
           </h1>
@@ -78,8 +97,17 @@ export async function POST(req: Request) {
 
     // 2. Send Admin Alert to business owner
     const adminHtml = `
-      <div style="font-family: sans-serif; padding: 20px;">
-        <h3 style="color: #063D34;">🎉 New Newsletter Subscriber</h3>
+      <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; max-width: 560px; padding: 20px; border: 1px solid #e2e8f0; border-radius: 12px;">
+        <table role="presentation" cellpadding="0" cellspacing="0" style="margin-bottom: 14px;">
+          <tr>
+            <td style="padding-right: 12px; vertical-align: middle;">
+              <img src="${logoSrc}" alt="Edgeway Holidays and Tours" width="40" height="40" style="display: block; border-radius: 50%;" />
+            </td>
+            <td style="vertical-align: middle;">
+              <h3 style="color: #063D34; margin: 0;">🎉 New Newsletter Subscriber</h3>
+            </td>
+          </tr>
+        </table>
         <p><strong>Subscriber Email:</strong> <a href="mailto:${email}">${email}</a></p>
         <p><strong>Date & Time:</strong> ${new Date().toLocaleString()}</p>
         <p><strong>Source:</strong> edgewayholidays.com Footer Newsletter</p>
@@ -92,14 +120,17 @@ export async function POST(req: Request) {
       to: email,
       subject: "Welcome to Edgeway Holidays and Tours — Your Sri Lanka Travel Inspiration 🌴",
       html: welcomeHtml,
+      attachments: logoAttachment,
     });
 
     // Send admin notification
     await transporter.sendMail({
       from: `"Edgeway Website" <${user}>`,
       to: user,
+      replyTo: email,
       subject: `[New Subscriber] ${email}`,
       html: adminHtml,
+      attachments: logoAttachment,
     });
 
     return NextResponse.json({
