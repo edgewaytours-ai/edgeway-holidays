@@ -32,6 +32,18 @@ interface BlogPost {
 
 const blogPosts: BlogPost[] = [
   {
+  "id": "colombo-to-galle-day-trip-private-driver",
+  "title": "Colombo to Galle Day Trip: Fort Walk, Turtle Hatchery & River Safari",
+  "excerpt": "Explore Galle Dutch Fort, Madu River boat safari, turtle conservation, and stilt fishermen on a direct air-conditioned day trip from Colombo.",
+  "category": "itinerary",
+  "categoryLabel": "Day Trips & Tours",
+  "image": "/images/pkg-adventure.jpg",
+  "date": "November 2026",
+  "readTime": "7 min read",
+  "author": "Pradeep Wickramasinghe",
+  "featured": false
+},
+  {
   "id": "sri-lanka-honeymoon-private-driver-guide",
   "title": "Sri Lanka Honeymoon with a Private Driver (2027 Luxury Guide)",
   "excerpt": "Plan your dream Sri Lanka honeymoon: luxury boutique tea villas, secluded southern beaches, private safari jeeps, and seamless chauffeur travel.",
