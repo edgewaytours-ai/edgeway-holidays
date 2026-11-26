@@ -32,6 +32,18 @@ interface BlogPost {
 
 const blogPosts: BlogPost[] = [
   {
+  "id": "sri-lanka-family-holiday-private-driver",
+  "title": "Sri Lanka with Kids: Private Family Van & Safe Safari Itinerary",
+  "excerpt": "Stress-free Sri Lanka family holidays with a private driver. Child car seats, spacious Toyota KDH vans, kid-safe safaris, and family resorts.",
+  "category": "guide",
+  "categoryLabel": "Family Travel",
+  "image": "/images/pkg-family.jpg",
+  "date": "November 2026",
+  "readTime": "8 min read",
+  "author": "Ruwan Senanayake",
+  "featured": false
+},
+  {
   "id": "colombo-to-galle-day-trip-private-driver",
   "title": "Colombo to Galle Day Trip: Fort Walk, Turtle Hatchery & River Safari",
   "excerpt": "Explore Galle Dutch Fort, Madu River boat safari, turtle conservation, and stilt fishermen on a direct air-conditioned day trip from Colombo.",
